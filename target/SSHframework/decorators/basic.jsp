@@ -16,7 +16,9 @@
 </head>
 <body>
 <%@include file="top.jsp"%>
+<div id="main" class="main-container container">
 <sitemesh:write property='body' />
+    </div>
 <%@include file="footer.jsp"%>
 </body>
 </html>

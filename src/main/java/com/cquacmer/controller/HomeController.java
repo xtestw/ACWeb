@@ -1,6 +1,7 @@
 package com.cquacmer.controller;
 
 import com.cquacmer.dao.INoticeDao;
+import com.cquacmer.model.Notice;
 import com.cquacmer.service.INoticeService;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -22,6 +23,9 @@ public class HomeController {
     @RequestMapping(value="/", method = RequestMethod.GET)
     public ModelAndView home(){
         System.out.println("home");
+        for(Notice notice:noticeService.listNotices()){
+            System.out.println(notice.getUsername());
+        }
         return new ModelAndView("/index","notices",noticeService.listNotices());
     }
     @RequestMapping(value="/index", method = RequestMethod.GET)

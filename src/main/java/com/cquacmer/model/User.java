@@ -12,12 +12,21 @@ public class User {
     private String name;
     private String hust_name;
     private String username;
+    private String password;
     private String poj;
     private String hdu;
     private String fzu;
     private String codeforces;
     private String uva;
     private String zoj;
+    private String email;
+    private String thirt;
+    private String iDCard;
+    private String schoolId;
+    private String campus;
+    private String major;
+    private String telephone;
+    private String blog;
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Column(name = "ID", nullable = false, length = 9)
@@ -99,5 +108,102 @@ public class User {
 
     public void setZoj(String zoj) {
         this.zoj = zoj;
+    }
+
+    public String getPassword() {
+        return password;
+    }
+
+    public void setPassword(String password) {
+        this.password = password;
+    }
+
+    public String getEmail() {
+        return email;
+    }
+
+    public void setEmail(String email) {
+        this.email = email;
+    }
+
+    public String getThirt() {
+        return thirt;
+    }
+
+    public void setThirt(String thirt) {
+        this.thirt = thirt;
+    }
+
+    public String getiDCard() {
+        return iDCard;
+    }
+
+    public void setiDCard(String iDCard) {
+        this.iDCard = iDCard;
+    }
+
+    public String getSchoolId() {
+        return schoolId;
+    }
+
+    public void setSchoolId(String schoolId) {
+        this.schoolId = schoolId;
+    }
+
+    public String getCampus() {
+        return campus;
+    }
+
+    public void setCampus(String campus) {
+        this.campus = campus;
+    }
+
+    public String getMajor() {
+        return major;
+    }
+
+    public void setMajor(String major) {
+        this.major = major;
+    }
+
+    public String getTelephone() {
+        return telephone;
+    }
+
+    public void setTelephone(String telephone) {
+        this.telephone = telephone;
+    }
+
+    public String getBlog() {
+        return blog;
+    }
+
+    public void setBlog(String blog) {
+        this.blog = blog;
+    }
+
+    @Override
+    public String toString() {
+        return "User{" +
+                "id=" + id +
+                ", name='" + name + '\'' +
+                ", hust_name='" + hust_name + '\'' +
+                ", username='" + username + '\'' +
+                ", password='" + password + '\'' +
+                ", poj='" + poj + '\'' +
+                ", hdu='" + hdu + '\'' +
+                ", fzu='" + fzu + '\'' +
+                ", codeforces='" + codeforces + '\'' +
+                ", uva='" + uva + '\'' +
+                ", zoj='" + zoj + '\'' +
+                ", email='" + email + '\'' +
+                ", thirt='" + thirt + '\'' +
+                ", iDCard='" + iDCard + '\'' +
+                ", schoolId='" + schoolId + '\'' +
+                ", campus='" + campus + '\'' +
+                ", major='" + major + '\'' +
+                ", telephone='" + telephone + '\'' +
+                ", blog='" + blog + '\'' +
+                '}';
     }
 }

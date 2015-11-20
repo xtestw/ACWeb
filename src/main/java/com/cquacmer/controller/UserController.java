@@ -27,6 +27,6 @@ public class UserController{
     @ResponseBody
     @RequestMapping(value="/list", method = RequestMethod.GET)
     public ModelAndView list(){
-        return new ModelAndView("/WEB-INF/jsp/user/list","listReuslt",userService.listUsers());
+        return new ModelAndView("/user/list","listReuslt",userService.listUsers());
     }
 }

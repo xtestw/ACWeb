@@ -20,10 +20,10 @@ import java.util.List;
 public class NoticeService implements INoticeService {
 
     @Resource
-    private INoticeDao userDao;
+    private INoticeDao noticeDao;
 
     @Override
     public List<Notice> listNotices() {
-        return userDao.findList("from Notice");
+        return noticeDao.findList("from Notice");
     }
 }

@@ -7,7 +7,7 @@
 --%>
 
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
-<footer class="main-footer">
+<footer class="main-footer" style="background: #eee;min-height:220px">
   <div class="container">
     <div class="row">
       <div class="col-sm-4">

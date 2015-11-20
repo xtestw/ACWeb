@@ -7,16 +7,17 @@
 --%>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <%@taglib prefix="decorator" uri="http://www.opensymphony.com/sitemesh/decorator" %>
-<html>
+<html lang="zh-CN">
 <head>
-    <title>
-      <sitemesh:write property='title' />
-    </title>
+
   <%@include file="/include/ruby-china.jsp"%>
+
+    <sitemesh:write property='head' />
+
 </head>
 <body>
 <%@include file="top.jsp"%>
-<div id="main" class="main-container container">
+<div id="main" class="main-container container" style="min-height: 500px;">
 <sitemesh:write property='body' />
     </div>
 <%@include file="footer.jsp"%>

@@ -34,7 +34,22 @@
         <servlet-name>springMVC</servlet-name>
         <url-pattern>/</url-pattern> <!-- 会拦截/的请求。 -->
     </servlet-mapping>
-
+    <servlet-mapping>
+        <servlet-name>default</servlet-name>
+        <url-pattern>/img/*</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>default</servlet-name>
+        <url-pattern>/js/*</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>default</servlet-name>
+        <url-pattern>/css/*</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>default</servlet-name>
+        <url-pattern>*.html</url-pattern>
+    </servlet-mapping>
 
     <!-- encodeing -->
     <filter>
@@ -70,6 +85,6 @@
     </listener>
 
     <welcome-file-list>
-        <welcome-file>/index.jsp</welcome-file>
+        <welcome-file>/index</welcome-file>
     </welcome-file-list>
 </web-app>

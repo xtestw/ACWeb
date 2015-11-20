@@ -9,6 +9,6 @@ import org.springframework.stereotype.Repository;
 /**
  * Created by admin on 2015/11/18.
  */
-@Repository("userDao")
+@Repository("noticeDao")
 public class NoticeDao extends BaseDao<Notice> implements INoticeDao {
 }

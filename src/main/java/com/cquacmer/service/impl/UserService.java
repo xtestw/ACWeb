@@ -23,4 +23,9 @@ public class UserService implements IUserService {
     public List<User> listUsers() {
         return userDao.findList("from User");
     }
+
+    @Override
+    public void update(User u) {
+        userDao.update(u);
+    }
 }

@@ -33,4 +33,6 @@ public class HomeController {
         System.out.println("index");
         return new ModelAndView("/index","notices",noticeService.listNotices());
     }
+
+
 }

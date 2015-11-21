@@ -57,6 +57,18 @@ public interface IBaseDao<T> {
      */
     void saveAll(Collection<?> entities);
 
+
+    /**
+     *
+     * 先查询再更新
+     *
+     * @param conditionMap
+     *              属性
+     */
+    void saveOrUpdateByProperty(Map<String,Object> conditionMap,Object entity);
+
+
+
     /**
      *
      * 批量删除实体

@@ -9,4 +9,5 @@ import java.util.List;
  */
 public interface IUserService {
     public List<User> listUsers();
+    public void update(User u);
 }

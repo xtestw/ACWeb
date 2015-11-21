@@ -80,6 +80,11 @@ public class BaseDao<T> implements IBaseDao<T> {
         }
     }
 
+    @Override
+    public void saveOrUpdateByProperty(Map<String, Object> conditionMap, Object entity) {
+
+    }
+
     public void deleteAll(Collection<?> entities) {
 
         for (@SuppressWarnings("rawtypes")

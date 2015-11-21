@@ -29,4 +29,11 @@ public class UserController{
     public ModelAndView list(){
         return new ModelAndView("/user/list","listReuslt",userService.listUsers());
     }
+
+    @RequestMapping(value = "update", method = RequestMethod.POST)
+    public ModelAndView update(User u)
+    {
+        userService.update(u);
+        return new ModelAndView("profile");
+    }
 }

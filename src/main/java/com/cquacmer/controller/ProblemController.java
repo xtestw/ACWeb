@@ -2,6 +2,7 @@ package com.cquacmer.controller;
 
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.servlet.ModelAndView;
 
 import java.util.Map;
 import java.util.Objects;
@@ -17,5 +18,16 @@ public class ProblemController {
     public String add(Map<String,Object> map){
 
         return "list";
+    }
+
+    @RequestMapping("/list")
+    public ModelAndView list(){
+        return new ModelAndView("");
+    }
+
+    @RequestMapping("/searsh")
+    public ModelAndView search(){
+
+        return new ModelAndView("");
     }
 }

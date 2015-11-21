@@ -7,3 +7,4 @@ import com.cquacmer.model.ACRecord;
  */
 public interface IACRecordDao extends IBaseDao<ACRecord> {
 }
+

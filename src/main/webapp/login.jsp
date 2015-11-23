@@ -35,6 +35,11 @@
       }
       return url;
     }
+
+    function login(){
+      $("#inputPassword").val($("#inputPassword").val());
+      return true;
+    }
   </script>
 </head>
 <body>
@@ -44,7 +49,7 @@
     <canvas id="canvas"></canvas>
   </div>
   <div class="col-sm-4">
-  <form class="form-signin" action="/user/login" method="post">
+  <form class="form-signin" action="/user/login" onsubmit="return login();" method="post">
     <c:if test="${loginError!=null}">
       <div class="alert">
         <a class="close" data-dismiss="alert">×</a>

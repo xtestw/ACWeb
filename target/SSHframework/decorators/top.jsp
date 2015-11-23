@@ -17,10 +17,8 @@
 
         <span id="main-nav-menu" data-turbolinks-temporary>
           <ul class="nav navbar-nav">
-            <li><a href="/index.jsp">首页</a></li>
-            <li><a href="/index.jsp">首页</a></li>
-            <li><a href="/index.jsp">首页</a></li>
-            <li><a href="/index.jsp">首页</a></li>
+            <li><a href="/">首页</a></li>
+            <li><a href="/problem/list">题解</a></li>
           </ul>
         </span>
       <c:choose>
@@ -48,8 +46,6 @@
             <div class="form-group">
               <input class="form-control" name="q" type="text"  placeholder="搜索本站内容" />
             </div>
-            <i class="fa btn-search fa-search"></i>
-            <i class="fa btn-close fa-times-circle"></i>
           </form>
         </li>
 

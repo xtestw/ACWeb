@@ -1,5 +1,7 @@
 package com.cquacmer.model;
 
+import org.hibernate.annotations.Type;
+
 import javax.persistence.*;
 import java.util.Date;
 
@@ -11,13 +13,9 @@ import java.util.Date;
 public class Solution {
     private int id;
     private int pid;
-
     private String username;
-    private String language;
+    private String solution;
     private String code;
-    private int memSize;
-    private int time;
-    private int codeLength;
     private Date submit;
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
@@ -38,8 +36,6 @@ public class Solution {
         this.pid = pid;
     }
 
-
-
     public String getUsername() {
         return username;
     }
@@ -48,16 +44,16 @@ public class Solution {
         this.username = username;
     }
 
-
-
-    public String getLanguage() {
-        return language;
+    @Type(type="text")
+    public String getSolution() {
+        return solution;
     }
 
-    public void setLanguage(String language) {
-        this.language = language;
+    public void setSolution(String solution) {
+        this.solution = solution;
     }
 
+    @Type(type="text")
     public String getCode() {
         return code;
     }
@@ -66,35 +62,11 @@ public class Solution {
         this.code = code;
     }
 
-    public int getMemSize() {
-        return memSize;
-    }
-
-    public void setMemSize(int memSize) {
-        this.memSize = memSize;
-    }
-
-    public int getTime() {
-        return time;
-    }
-
-    public void setTime(int time) {
-        this.time = time;
-    }
-
     public Date getSubmit() {
         return submit;
     }
 
     public void setSubmit(Date submit) {
         this.submit = submit;
-    }
-
-    public int getCodeLength() {
-        return codeLength;
-    }
-
-    public void setCodeLength(int codeLength) {
-        this.codeLength = codeLength;
     }
 }

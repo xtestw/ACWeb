@@ -12,7 +12,7 @@
 
   <%@include file="/include/ruby-china.jsp"%>
 
-    <sitemesh:write property='head' />
+  <sitemesh:write property='head' />
 
 </head>
 <body>

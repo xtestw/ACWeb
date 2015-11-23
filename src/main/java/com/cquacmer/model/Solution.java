@@ -12,7 +12,7 @@ import java.util.Date;
 @Entity
 public class Solution {
     private int id;
-    private int pid;
+    private Problem problem;
     private String username;
     private String solution;
     private String code;
@@ -28,12 +28,14 @@ public class Solution {
         this.id = id;
     }
 
-    public int getPid() {
-        return pid;
+    @ManyToOne(cascade=CascadeType.ALL)
+    @JoinColumn(name = "pid")
+    public Problem getProblem() {
+        return problem;
     }
 
-    public void setPid(int pid) {
-        this.pid = pid;
+    public void setProblem(Problem problem) {
+        this.problem = problem;
     }
 
     public String getUsername() {

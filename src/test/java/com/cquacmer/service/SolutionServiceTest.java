@@ -1,5 +1,8 @@
 package com.cquacmer.service;
 
+import com.cquacmer.dao.ISolutionDao;
+import com.cquacmer.model.Problem;
+import com.cquacmer.model.Solution;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.springframework.test.context.ContextConfiguration;
@@ -8,6 +11,7 @@ import org.springframework.test.context.transaction.TransactionConfiguration;
 import org.springframework.transaction.annotation.Transactional;
 
 import javax.annotation.Resource;
+import java.util.List;
 
 /**
  * Created by admin on 2015/11/22.
@@ -20,9 +24,19 @@ import javax.annotation.Resource;
 public class SolutionServiceTest {
     @Resource
     private ISolutionService solutionService;
+    @Resource
+    private ISolutionDao solutionDao;
 
     @Test
     public void query(){
-        solutionService.list("12");
+        Problem p= solutionService.list("1");
+        System.out.println(p.getSolutions().size());
+        List<Solution> solutionList= solutionDao.findList("from Solution where pid=?",1);
+        System.out.println(solutionList.size());
+        Solution s=new Solution();
+        s.setUsername("@2");
+        s.setSolution("33333");
+        s.setProblem(p);
+        p.getSolutions().add(s);
     }
 }

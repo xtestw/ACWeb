@@ -1,6 +1,8 @@
 package com.cquacmer.service.impl;
 
+import com.cquacmer.dao.IProblemDao;
 import com.cquacmer.dao.ISolutionDao;
+import com.cquacmer.model.Problem;
 import com.cquacmer.model.Solution;
 import com.cquacmer.service.ISolutionService;
 import org.springframework.stereotype.Service;
@@ -17,8 +19,12 @@ import java.util.List;
 public class SolutionService implements ISolutionService {
     @Resource
     private ISolutionDao solutionDao;
+    @Resource
+    private IProblemDao problemDao;
     @Override
-    public List<Solution> list(String pid) {
-        return solutionDao.findList("from Solution s where s.pid=?",Integer.parseInt(pid));
+    public Problem list(String pid) {
+        Problem p=problemDao.get("from Problem where id=?",Integer.parseInt(pid));
+        p.getSolutions();
+        return p;
     }
 }

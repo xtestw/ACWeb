@@ -1,6 +1,7 @@
 package com.cquacmer.service;
 
 import com.cquacmer.model.Pagination;
+import com.cquacmer.model.Problem;
 import com.cquacmer.model.Solution;
 
 import java.util.List;
@@ -10,5 +11,5 @@ import java.util.List;
  */
 public interface ISolutionService {
 
-    public List<Solution> list(String pid);
+    public Problem list(String pid);
 }

@@ -19,6 +19,6 @@ public class SolutionController {
     @RequestMapping("/show")
     public ModelAndView show(String pid){
         if(pid==null) pid="0";
-        return new ModelAndView("/solution/show","solutions",solutionService.list(pid));
+        return new ModelAndView("/solution/show","problem",solutionService.list(pid));
     }
 }

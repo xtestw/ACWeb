@@ -4960,3 +4960,950 @@ line 1:1: unexpected token: find
 [INFO][2015-11-23 00:03:18,547][org.springframework.context.support.GenericApplicationContext]Closing org.springframework.context.support.GenericApplicationContext@2ef5e5e3: startup date [Mon Nov 23 00:03:14 CST 2015]; root of context hierarchy
 [INFO][2015-11-23 00:03:18,549][org.springframework.beans.factory.support.DefaultListableBeanFactory]Destroying singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@17c1bced: defining beans [org.springframework.beans.factory.config.PropertyPlaceholderConfigurer#0,codeController,homeController,loginController,noticeController,problemController,solutionController,summaryController,userController,aCRecordDao,noticeDao,problemDao,solutionDao,userDao,loginService,noticeService,problemService,solutionService,userService,Hust,org.springframework.context.annotation.internalConfigurationAnnotationProcessor,org.springframework.context.annotation.internalAutowiredAnnotationProcessor,org.springframework.context.annotation.internalRequiredAnnotationProcessor,org.springframework.context.annotation.internalCommonAnnotationProcessor,org.springframework.context.annotation.internalPersistenceAnnotationProcessor,dataSource,sessionFactory,transactionManager,transactionAdvice,org.springframework.aop.config.internalAutoProxyCreator,transactionPointcut,org.springframework.aop.support.DefaultBeanFactoryPointcutAdvisor#0,org.springframework.context.annotation.ConfigurationClassPostProcessor.importAwareProcessor]; root of factory hierarchy
 [INFO][2015-11-23 00:03:18,575][com.alibaba.druid.pool.DruidDataSource]{dataSource-1} closed
+[INFO][2015-11-23 11:28:58,565][org.springframework.beans.factory.xml.XmlBeanDefinitionReader]Loading XML bean definitions from class path resource [spring.xml]
+[INFO][2015-11-23 11:28:58,826][org.springframework.context.annotation.ClassPathBeanDefinitionScanner]JSR-250 'javax.annotation.ManagedBean' found and supported for component scanning
+[INFO][2015-11-23 11:28:58,832][org.springframework.context.annotation.ClassPathBeanDefinitionScanner]JSR-330 'javax.inject.Named' annotation found and supported for component scanning
+[INFO][2015-11-23 11:28:59,263][org.springframework.beans.factory.xml.XmlBeanDefinitionReader]Loading XML bean definitions from class path resource [spring-hibernate.xml]
+[INFO][2015-11-23 11:28:59,550][org.springframework.context.support.GenericApplicationContext]Refreshing org.springframework.context.support.GenericApplicationContext@4439f31e: startup date [Mon Nov 23 11:28:59 CST 2015]; root of context hierarchy
+[INFO][2015-11-23 11:29:00,067][org.springframework.beans.factory.config.PropertyPlaceholderConfigurer]Loading properties file from class path resource [config.properties]
+[INFO][2015-11-23 11:29:00,092][org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor]JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+[INFO][2015-11-23 11:29:00,223][org.springframework.beans.factory.support.DefaultListableBeanFactory]Pre-instantiating singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@358c99f5: defining beans [org.springframework.beans.factory.config.PropertyPlaceholderConfigurer#0,codeController,homeController,loginController,noticeController,problemController,solutionController,summaryController,userController,aCRecordDao,noticeDao,problemDao,solutionDao,userDao,loginService,noticeService,problemService,solutionService,userService,Hust,org.springframework.context.annotation.internalConfigurationAnnotationProcessor,org.springframework.context.annotation.internalAutowiredAnnotationProcessor,org.springframework.context.annotation.internalRequiredAnnotationProcessor,org.springframework.context.annotation.internalCommonAnnotationProcessor,org.springframework.context.annotation.internalPersistenceAnnotationProcessor,dataSource,sessionFactory,transactionManager,transactionAdvice,org.springframework.aop.config.internalAutoProxyCreator,transactionPointcut,org.springframework.aop.support.DefaultBeanFactoryPointcutAdvisor#0,org.springframework.context.annotation.ConfigurationClassPostProcessor.importAwareProcessor]; root of factory hierarchy
+[ERROR][2015-11-23 11:29:00,976][com.alibaba.druid.pool.DruidAbstractDataSource]maxIdle is deprecated
+[INFO][2015-11-23 11:29:01,100][com.alibaba.druid.pool.DruidDataSource]{dataSource-1} inited
+[INFO][2015-11-23 11:29:01,490][org.hibernate.annotations.common.Version]HCANN000001: Hibernate Commons Annotations {4.0.2.Final}
+[INFO][2015-11-23 11:29:01,502][org.hibernate.Version]HHH000412: Hibernate Core {4.2.5.Final}
+[INFO][2015-11-23 11:29:01,507][org.hibernate.cfg.Environment]HHH000206: hibernate.properties not found
+[INFO][2015-11-23 11:29:01,512][org.hibernate.cfg.Environment]HHH000021: Bytecode provider name : javassist
+[INFO][2015-11-23 11:29:02,143][org.hibernate.dialect.Dialect]HHH000400: Using dialect: org.hibernate.dialect.MySQLDialect
+[INFO][2015-11-23 11:29:02,377][org.hibernate.engine.transaction.internal.TransactionFactoryInitiator]HHH000399: Using default transaction strategy (direct JDBC transactions)
+[INFO][2015-11-23 11:29:02,388][org.hibernate.hql.internal.ast.ASTQueryTranslatorFactory]HHH000397: Using ASTQueryTranslatorFactory
+[INFO][2015-11-23 11:29:02,856][org.hibernate.tool.hbm2ddl.SchemaUpdate]HHH000228: Running hbm2ddl schema update
+[INFO][2015-11-23 11:29:02,857][org.hibernate.tool.hbm2ddl.SchemaUpdate]HHH000102: Fetching database metadata
+[INFO][2015-11-23 11:29:02,867][org.hibernate.tool.hbm2ddl.SchemaUpdate]HHH000396: Updating schema
+[INFO][2015-11-23 11:29:02,913][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000261: Table found: cquacm.acrecord
+[INFO][2015-11-23 11:29:02,914][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000037: Columns: [pid, id, source, username]
+[INFO][2015-11-23 11:29:02,914][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000108: Foreign keys: []
+[INFO][2015-11-23 11:29:02,916][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000126: Indexes: [primary]
+[INFO][2015-11-23 11:29:02,932][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000261: Table found: cquacm.hustaccode
+[INFO][2015-11-23 11:29:02,933][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000037: Columns: [memsize, code, submit, language, pid, id, time, codelength, username]
+[INFO][2015-11-23 11:29:02,933][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000108: Foreign keys: []
+[INFO][2015-11-23 11:29:02,934][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000126: Indexes: [primary]
+[INFO][2015-11-23 11:29:02,950][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000261: Table found: cquacm.notice
+[INFO][2015-11-23 11:29:02,951][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000037: Columns: [id, time, title, content, username]
+[INFO][2015-11-23 11:29:02,951][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000108: Foreign keys: []
+[INFO][2015-11-23 11:29:02,952][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000126: Indexes: [primary]
+[INFO][2015-11-23 11:29:02,969][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000261: Table found: cquacm.problem
+[INFO][2015-11-23 11:29:02,969][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000037: Columns: [ojid, level, ojname, id, tags]
+[INFO][2015-11-23 11:29:02,970][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000108: Foreign keys: []
+[INFO][2015-11-23 11:29:02,970][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000126: Indexes: [primary]
+[INFO][2015-11-23 11:29:02,989][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000261: Table found: cquacm.problem_solution
+[INFO][2015-11-23 11:29:02,990][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000037: Columns: [problem_id, solutions_id]
+[INFO][2015-11-23 11:29:02,990][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000108: Foreign keys: [fk_llsltderwl5mso129yv474mka, fk_fsvgfqumker6vt2eliu7vm8n8]
+[INFO][2015-11-23 11:29:02,990][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000126: Indexes: [uk_fsvgfqumker6vt2eliu7vm8n8, fk_llsltderwl5mso129yv474mka, fk_fsvgfqumker6vt2eliu7vm8n8]
+[INFO][2015-11-23 11:29:03,008][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000261: Table found: cquacm.solution
+[INFO][2015-11-23 11:29:03,009][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000037: Columns: [code, solution, submit, pid, id, username]
+[INFO][2015-11-23 11:29:03,009][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000108: Foreign keys: [fk_8tvulqof7nk1vkm7oenb55130]
+[INFO][2015-11-23 11:29:03,010][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000126: Indexes: [fk_8tvulqof7nk1vkm7oenb55130, primary]
+[INFO][2015-11-23 11:29:03,026][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000261: Table found: cquacm.user
+[INFO][2015-11-23 11:29:03,027][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000037: Columns: [fzu, uva, thirt, campus, codeforces, poj, telephone, blog, password, zoj, major, idcard, schoolid, name, hdu, id, email, hust_name, username]
+[INFO][2015-11-23 11:29:03,028][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000108: Foreign keys: []
+[INFO][2015-11-23 11:29:03,029][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000126: Indexes: [primary]
+[INFO][2015-11-23 11:29:03,032][org.hibernate.tool.hbm2ddl.SchemaUpdate]HHH000232: Schema update complete
+[INFO][2015-11-23 11:29:03,415][org.springframework.orm.hibernate4.HibernateTransactionManager]Using DataSource [{
+	CreateTime:"2015-11-23 11:29:00",
+	ActiveCount:0,
+	PoolingCount:1,
+	CreateCount:1,
+	DestroyCount:0,
+	CloseCount:2,
+	ConnectCount:2,
+	Connections:[
+		{ID:2129844134, ConnectTime:"2015-11-23 11:29:02", UseCount:2, LastActiveTime:"2015-11-23 11:29:03"}
+	]
+}] of Hibernate SessionFactory for HibernateTransactionManager
+[INFO][2015-11-23 11:29:03,587][org.springframework.test.context.transaction.TransactionalTestExecutionListener]Began transaction (1): transaction manager [org.springframework.orm.hibernate4.HibernateTransactionManager@1df98368]; rollback [false]
+[WARN][2015-11-23 11:29:03,800][org.hibernate.hql.internal.ast.HqlSqlWalker][DEPRECATION] Encountered positional parameter near line 1, column 42.  Positional parameter are considered deprecated; use named parameters or JPA-style positional parameters instead.
+[INFO][2015-11-23 11:29:04,243][org.springframework.test.context.transaction.TransactionalTestExecutionListener]Committed transaction after test execution for test context [TestContext@1f14f20c testClass = SolutionServiceTest, testInstance = com.cquacmer.service.SolutionServiceTest@7daa61f3, testMethod = query@SolutionServiceTest, testException = [null], mergedContextConfiguration = [MergedContextConfiguration@62315f22 testClass = SolutionServiceTest, locations = '{classpath:spring.xml, classpath:spring-hibernate.xml}', classes = '{}', contextInitializerClasses = '[]', activeProfiles = '{}', contextLoader = 'org.springframework.test.context.support.DelegatingSmartContextLoader', parent = [null]]]
+[INFO][2015-11-23 11:29:04,286][org.springframework.context.support.GenericApplicationContext]Closing org.springframework.context.support.GenericApplicationContext@4439f31e: startup date [Mon Nov 23 11:28:59 CST 2015]; root of context hierarchy
+[INFO][2015-11-23 11:29:04,288][org.springframework.beans.factory.support.DefaultListableBeanFactory]Destroying singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@358c99f5: defining beans [org.springframework.beans.factory.config.PropertyPlaceholderConfigurer#0,codeController,homeController,loginController,noticeController,problemController,solutionController,summaryController,userController,aCRecordDao,noticeDao,problemDao,solutionDao,userDao,loginService,noticeService,problemService,solutionService,userService,Hust,org.springframework.context.annotation.internalConfigurationAnnotationProcessor,org.springframework.context.annotation.internalAutowiredAnnotationProcessor,org.springframework.context.annotation.internalRequiredAnnotationProcessor,org.springframework.context.annotation.internalCommonAnnotationProcessor,org.springframework.context.annotation.internalPersistenceAnnotationProcessor,dataSource,sessionFactory,transactionManager,transactionAdvice,org.springframework.aop.config.internalAutoProxyCreator,transactionPointcut,org.springframework.aop.support.DefaultBeanFactoryPointcutAdvisor#0,org.springframework.context.annotation.ConfigurationClassPostProcessor.importAwareProcessor]; root of factory hierarchy
+[INFO][2015-11-23 11:29:04,307][com.alibaba.druid.pool.DruidDataSource]{dataSource-1} closed
+[INFO][2015-11-23 11:29:19,813][org.springframework.beans.factory.xml.XmlBeanDefinitionReader]Loading XML bean definitions from class path resource [spring.xml]
+[INFO][2015-11-23 11:29:20,112][org.springframework.context.annotation.ClassPathBeanDefinitionScanner]JSR-250 'javax.annotation.ManagedBean' found and supported for component scanning
+[INFO][2015-11-23 11:29:20,115][org.springframework.context.annotation.ClassPathBeanDefinitionScanner]JSR-330 'javax.inject.Named' annotation found and supported for component scanning
+[INFO][2015-11-23 11:29:20,320][org.springframework.beans.factory.xml.XmlBeanDefinitionReader]Loading XML bean definitions from class path resource [spring-hibernate.xml]
+[INFO][2015-11-23 11:29:20,450][org.springframework.context.support.GenericApplicationContext]Refreshing org.springframework.context.support.GenericApplicationContext@2ef5e5e3: startup date [Mon Nov 23 11:29:20 CST 2015]; root of context hierarchy
+[INFO][2015-11-23 11:29:20,872][org.springframework.beans.factory.config.PropertyPlaceholderConfigurer]Loading properties file from class path resource [config.properties]
+[INFO][2015-11-23 11:29:20,937][org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor]JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+[INFO][2015-11-23 11:29:21,348][org.springframework.beans.factory.support.DefaultListableBeanFactory]Pre-instantiating singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@5906ebcb: defining beans [org.springframework.beans.factory.config.PropertyPlaceholderConfigurer#0,codeController,homeController,loginController,noticeController,problemController,solutionController,summaryController,userController,aCRecordDao,noticeDao,problemDao,solutionDao,userDao,loginService,noticeService,problemService,solutionService,userService,Hust,org.springframework.context.annotation.internalConfigurationAnnotationProcessor,org.springframework.context.annotation.internalAutowiredAnnotationProcessor,org.springframework.context.annotation.internalRequiredAnnotationProcessor,org.springframework.context.annotation.internalCommonAnnotationProcessor,org.springframework.context.annotation.internalPersistenceAnnotationProcessor,dataSource,sessionFactory,transactionManager,transactionAdvice,org.springframework.aop.config.internalAutoProxyCreator,transactionPointcut,org.springframework.aop.support.DefaultBeanFactoryPointcutAdvisor#0,org.springframework.context.annotation.ConfigurationClassPostProcessor.importAwareProcessor]; root of factory hierarchy
+[ERROR][2015-11-23 11:29:22,149][com.alibaba.druid.pool.DruidAbstractDataSource]maxIdle is deprecated
+[INFO][2015-11-23 11:29:22,346][com.alibaba.druid.pool.DruidDataSource]{dataSource-1} inited
+[INFO][2015-11-23 11:29:22,698][org.hibernate.annotations.common.Version]HCANN000001: Hibernate Commons Annotations {4.0.2.Final}
+[INFO][2015-11-23 11:29:22,706][org.hibernate.Version]HHH000412: Hibernate Core {4.2.5.Final}
+[INFO][2015-11-23 11:29:22,709][org.hibernate.cfg.Environment]HHH000206: hibernate.properties not found
+[INFO][2015-11-23 11:29:22,712][org.hibernate.cfg.Environment]HHH000021: Bytecode provider name : javassist
+[INFO][2015-11-23 11:29:23,217][org.hibernate.dialect.Dialect]HHH000400: Using dialect: org.hibernate.dialect.MySQLDialect
+[INFO][2015-11-23 11:29:23,443][org.hibernate.engine.transaction.internal.TransactionFactoryInitiator]HHH000399: Using default transaction strategy (direct JDBC transactions)
+[INFO][2015-11-23 11:29:23,449][org.hibernate.hql.internal.ast.ASTQueryTranslatorFactory]HHH000397: Using ASTQueryTranslatorFactory
+[INFO][2015-11-23 11:29:23,823][org.hibernate.tool.hbm2ddl.SchemaUpdate]HHH000228: Running hbm2ddl schema update
+[INFO][2015-11-23 11:29:23,823][org.hibernate.tool.hbm2ddl.SchemaUpdate]HHH000102: Fetching database metadata
+[INFO][2015-11-23 11:29:23,829][org.hibernate.tool.hbm2ddl.SchemaUpdate]HHH000396: Updating schema
+[INFO][2015-11-23 11:29:23,866][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000261: Table found: cquacm.acrecord
+[INFO][2015-11-23 11:29:23,866][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000037: Columns: [pid, id, source, username]
+[INFO][2015-11-23 11:29:23,867][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000108: Foreign keys: []
+[INFO][2015-11-23 11:29:23,867][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000126: Indexes: [primary]
+[INFO][2015-11-23 11:29:23,890][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000261: Table found: cquacm.hustaccode
+[INFO][2015-11-23 11:29:23,890][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000037: Columns: [memsize, code, submit, language, pid, id, time, codelength, username]
+[INFO][2015-11-23 11:29:23,891][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000108: Foreign keys: []
+[INFO][2015-11-23 11:29:23,891][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000126: Indexes: [primary]
+[INFO][2015-11-23 11:29:23,907][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000261: Table found: cquacm.notice
+[INFO][2015-11-23 11:29:23,908][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000037: Columns: [id, time, title, content, username]
+[INFO][2015-11-23 11:29:23,908][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000108: Foreign keys: []
+[INFO][2015-11-23 11:29:23,909][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000126: Indexes: [primary]
+[INFO][2015-11-23 11:29:23,923][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000261: Table found: cquacm.problem
+[INFO][2015-11-23 11:29:23,923][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000037: Columns: [ojid, level, ojname, id, tags]
+[INFO][2015-11-23 11:29:23,924][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000108: Foreign keys: []
+[INFO][2015-11-23 11:29:23,924][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000126: Indexes: [primary]
+[INFO][2015-11-23 11:29:23,942][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000261: Table found: cquacm.problem_solution
+[INFO][2015-11-23 11:29:23,943][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000037: Columns: [problem_id, solutions_id]
+[INFO][2015-11-23 11:29:23,943][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000108: Foreign keys: [fk_llsltderwl5mso129yv474mka, fk_fsvgfqumker6vt2eliu7vm8n8]
+[INFO][2015-11-23 11:29:23,944][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000126: Indexes: [uk_fsvgfqumker6vt2eliu7vm8n8, fk_llsltderwl5mso129yv474mka, fk_fsvgfqumker6vt2eliu7vm8n8]
+[INFO][2015-11-23 11:29:23,960][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000261: Table found: cquacm.solution
+[INFO][2015-11-23 11:29:23,960][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000037: Columns: [code, solution, submit, pid, id, username]
+[INFO][2015-11-23 11:29:23,961][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000108: Foreign keys: [fk_8tvulqof7nk1vkm7oenb55130]
+[INFO][2015-11-23 11:29:23,961][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000126: Indexes: [fk_8tvulqof7nk1vkm7oenb55130, primary]
+[INFO][2015-11-23 11:29:23,977][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000261: Table found: cquacm.user
+[INFO][2015-11-23 11:29:23,977][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000037: Columns: [fzu, uva, thirt, campus, codeforces, poj, telephone, blog, password, zoj, major, idcard, schoolid, name, hdu, id, email, hust_name, username]
+[INFO][2015-11-23 11:29:23,978][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000108: Foreign keys: []
+[INFO][2015-11-23 11:29:23,979][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000126: Indexes: [primary]
+[INFO][2015-11-23 11:29:23,981][org.hibernate.tool.hbm2ddl.SchemaUpdate]HHH000232: Schema update complete
+[INFO][2015-11-23 11:29:24,315][org.springframework.orm.hibernate4.HibernateTransactionManager]Using DataSource [{
+	CreateTime:"2015-11-23 11:29:22",
+	ActiveCount:0,
+	PoolingCount:1,
+	CreateCount:1,
+	DestroyCount:0,
+	CloseCount:2,
+	ConnectCount:2,
+	Connections:[
+		{ID:1006624255, ConnectTime:"2015-11-23 11:29:23", UseCount:2, LastActiveTime:"2015-11-23 11:29:23"}
+	]
+}] of Hibernate SessionFactory for HibernateTransactionManager
+[INFO][2015-11-23 11:29:24,443][org.springframework.test.context.transaction.TransactionalTestExecutionListener]Began transaction (1): transaction manager [org.springframework.orm.hibernate4.HibernateTransactionManager@2427e004]; rollback [false]
+[WARN][2015-11-23 11:29:24,658][org.hibernate.hql.internal.ast.HqlSqlWalker][DEPRECATION] Encountered positional parameter near line 1, column 42.  Positional parameter are considered deprecated; use named parameters or JPA-style positional parameters instead.
+[INFO][2015-11-23 11:29:24,863][org.springframework.test.context.transaction.TransactionalTestExecutionListener]Committed transaction after test execution for test context [TestContext@7f4037ed testClass = SolutionServiceTest, testInstance = com.cquacmer.service.SolutionServiceTest@24e8de5c, testMethod = query@SolutionServiceTest, testException = [null], mergedContextConfiguration = [MergedContextConfiguration@64040287 testClass = SolutionServiceTest, locations = '{classpath:spring.xml, classpath:spring-hibernate.xml}', classes = '{}', contextInitializerClasses = '[]', activeProfiles = '{}', contextLoader = 'org.springframework.test.context.support.DelegatingSmartContextLoader', parent = [null]]]
+[INFO][2015-11-23 11:29:24,880][org.springframework.context.support.GenericApplicationContext]Closing org.springframework.context.support.GenericApplicationContext@2ef5e5e3: startup date [Mon Nov 23 11:29:20 CST 2015]; root of context hierarchy
+[INFO][2015-11-23 11:29:24,906][org.springframework.beans.factory.support.DefaultListableBeanFactory]Destroying singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@5906ebcb: defining beans [org.springframework.beans.factory.config.PropertyPlaceholderConfigurer#0,codeController,homeController,loginController,noticeController,problemController,solutionController,summaryController,userController,aCRecordDao,noticeDao,problemDao,solutionDao,userDao,loginService,noticeService,problemService,solutionService,userService,Hust,org.springframework.context.annotation.internalConfigurationAnnotationProcessor,org.springframework.context.annotation.internalAutowiredAnnotationProcessor,org.springframework.context.annotation.internalRequiredAnnotationProcessor,org.springframework.context.annotation.internalCommonAnnotationProcessor,org.springframework.context.annotation.internalPersistenceAnnotationProcessor,dataSource,sessionFactory,transactionManager,transactionAdvice,org.springframework.aop.config.internalAutoProxyCreator,transactionPointcut,org.springframework.aop.support.DefaultBeanFactoryPointcutAdvisor#0,org.springframework.context.annotation.ConfigurationClassPostProcessor.importAwareProcessor]; root of factory hierarchy
+[INFO][2015-11-23 11:29:24,927][com.alibaba.druid.pool.DruidDataSource]{dataSource-1} closed
+[INFO][2015-11-23 11:30:41,766][org.springframework.beans.factory.xml.XmlBeanDefinitionReader]Loading XML bean definitions from class path resource [spring.xml]
+[INFO][2015-11-23 11:30:42,082][org.springframework.context.annotation.ClassPathBeanDefinitionScanner]JSR-250 'javax.annotation.ManagedBean' found and supported for component scanning
+[INFO][2015-11-23 11:30:42,093][org.springframework.context.annotation.ClassPathBeanDefinitionScanner]JSR-330 'javax.inject.Named' annotation found and supported for component scanning
+[INFO][2015-11-23 11:30:42,318][org.springframework.beans.factory.xml.XmlBeanDefinitionReader]Loading XML bean definitions from class path resource [spring-hibernate.xml]
+[INFO][2015-11-23 11:30:42,467][org.springframework.context.support.GenericApplicationContext]Refreshing org.springframework.context.support.GenericApplicationContext@2ef5e5e3: startup date [Mon Nov 23 11:30:42 CST 2015]; root of context hierarchy
+[INFO][2015-11-23 11:30:42,751][org.springframework.beans.factory.config.PropertyPlaceholderConfigurer]Loading properties file from class path resource [config.properties]
+[INFO][2015-11-23 11:30:42,760][org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor]JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+[INFO][2015-11-23 11:30:42,835][org.springframework.beans.factory.support.DefaultListableBeanFactory]Pre-instantiating singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@5906ebcb: defining beans [org.springframework.beans.factory.config.PropertyPlaceholderConfigurer#0,codeController,homeController,loginController,noticeController,problemController,solutionController,summaryController,userController,aCRecordDao,noticeDao,problemDao,solutionDao,userDao,loginService,noticeService,problemService,solutionService,userService,Hust,org.springframework.context.annotation.internalConfigurationAnnotationProcessor,org.springframework.context.annotation.internalAutowiredAnnotationProcessor,org.springframework.context.annotation.internalRequiredAnnotationProcessor,org.springframework.context.annotation.internalCommonAnnotationProcessor,org.springframework.context.annotation.internalPersistenceAnnotationProcessor,dataSource,sessionFactory,transactionManager,transactionAdvice,org.springframework.aop.config.internalAutoProxyCreator,transactionPointcut,org.springframework.aop.support.DefaultBeanFactoryPointcutAdvisor#0,org.springframework.context.annotation.ConfigurationClassPostProcessor.importAwareProcessor]; root of factory hierarchy
+[ERROR][2015-11-23 11:30:43,656][com.alibaba.druid.pool.DruidAbstractDataSource]maxIdle is deprecated
+[INFO][2015-11-23 11:30:43,881][com.alibaba.druid.pool.DruidDataSource]{dataSource-1} inited
+[INFO][2015-11-23 11:30:44,314][org.hibernate.annotations.common.Version]HCANN000001: Hibernate Commons Annotations {4.0.2.Final}
+[INFO][2015-11-23 11:30:44,324][org.hibernate.Version]HHH000412: Hibernate Core {4.2.5.Final}
+[INFO][2015-11-23 11:30:44,327][org.hibernate.cfg.Environment]HHH000206: hibernate.properties not found
+[INFO][2015-11-23 11:30:44,330][org.hibernate.cfg.Environment]HHH000021: Bytecode provider name : javassist
+[INFO][2015-11-23 11:30:44,944][org.hibernate.dialect.Dialect]HHH000400: Using dialect: org.hibernate.dialect.MySQLDialect
+[INFO][2015-11-23 11:30:45,152][org.hibernate.engine.transaction.internal.TransactionFactoryInitiator]HHH000399: Using default transaction strategy (direct JDBC transactions)
+[INFO][2015-11-23 11:30:45,160][org.hibernate.hql.internal.ast.ASTQueryTranslatorFactory]HHH000397: Using ASTQueryTranslatorFactory
+[INFO][2015-11-23 11:30:45,585][org.hibernate.tool.hbm2ddl.SchemaUpdate]HHH000228: Running hbm2ddl schema update
+[INFO][2015-11-23 11:30:45,585][org.hibernate.tool.hbm2ddl.SchemaUpdate]HHH000102: Fetching database metadata
+[INFO][2015-11-23 11:30:45,595][org.hibernate.tool.hbm2ddl.SchemaUpdate]HHH000396: Updating schema
+[INFO][2015-11-23 11:30:45,631][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000261: Table found: cquacm.acrecord
+[INFO][2015-11-23 11:30:45,632][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000037: Columns: [pid, id, source, username]
+[INFO][2015-11-23 11:30:45,632][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000108: Foreign keys: []
+[INFO][2015-11-23 11:30:45,633][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000126: Indexes: [primary]
+[INFO][2015-11-23 11:30:45,647][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000261: Table found: cquacm.hustaccode
+[INFO][2015-11-23 11:30:45,648][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000037: Columns: [memsize, code, submit, language, pid, id, time, codelength, username]
+[INFO][2015-11-23 11:30:45,648][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000108: Foreign keys: []
+[INFO][2015-11-23 11:30:45,649][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000126: Indexes: [primary]
+[INFO][2015-11-23 11:30:45,663][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000261: Table found: cquacm.notice
+[INFO][2015-11-23 11:30:45,664][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000037: Columns: [id, time, title, content, username]
+[INFO][2015-11-23 11:30:45,664][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000108: Foreign keys: []
+[INFO][2015-11-23 11:30:45,664][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000126: Indexes: [primary]
+[INFO][2015-11-23 11:30:45,681][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000261: Table found: cquacm.problem
+[INFO][2015-11-23 11:30:45,681][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000037: Columns: [ojid, level, ojname, id, tags]
+[INFO][2015-11-23 11:30:45,682][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000108: Foreign keys: []
+[INFO][2015-11-23 11:30:45,682][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000126: Indexes: [primary]
+[INFO][2015-11-23 11:30:45,708][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000261: Table found: cquacm.solution
+[INFO][2015-11-23 11:30:45,708][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000037: Columns: [code, solution, submit, pid, id, username]
+[INFO][2015-11-23 11:30:45,721][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000108: Foreign keys: [fk_8tvulqof7nk1vkm7oenb55130]
+[INFO][2015-11-23 11:30:45,722][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000126: Indexes: [fk_8tvulqof7nk1vkm7oenb55130, primary]
+[INFO][2015-11-23 11:30:45,737][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000261: Table found: cquacm.user
+[INFO][2015-11-23 11:30:45,738][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000037: Columns: [fzu, uva, thirt, campus, codeforces, poj, telephone, blog, password, zoj, major, idcard, schoolid, name, hdu, id, email, hust_name, username]
+[INFO][2015-11-23 11:30:45,738][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000108: Foreign keys: []
+[INFO][2015-11-23 11:30:45,739][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000126: Indexes: [primary]
+[INFO][2015-11-23 11:30:45,741][org.hibernate.tool.hbm2ddl.SchemaUpdate]HHH000232: Schema update complete
+[INFO][2015-11-23 11:30:46,048][org.springframework.orm.hibernate4.HibernateTransactionManager]Using DataSource [{
+	CreateTime:"2015-11-23 11:30:43",
+	ActiveCount:0,
+	PoolingCount:1,
+	CreateCount:1,
+	DestroyCount:0,
+	CloseCount:2,
+	ConnectCount:2,
+	Connections:[
+		{ID:832432849, ConnectTime:"2015-11-23 11:30:44", UseCount:2, LastActiveTime:"2015-11-23 11:30:45"}
+	]
+}] of Hibernate SessionFactory for HibernateTransactionManager
+[INFO][2015-11-23 11:30:46,185][org.springframework.test.context.transaction.TransactionalTestExecutionListener]Began transaction (1): transaction manager [org.springframework.orm.hibernate4.HibernateTransactionManager@7e0aadd0]; rollback [false]
+[WARN][2015-11-23 11:30:46,340][org.hibernate.hql.internal.ast.HqlSqlWalker][DEPRECATION] Encountered positional parameter near line 1, column 42.  Positional parameter are considered deprecated; use named parameters or JPA-style positional parameters instead.
+[INFO][2015-11-23 11:30:46,564][org.springframework.test.context.transaction.TransactionalTestExecutionListener]Committed transaction after test execution for test context [TestContext@78b236a0 testClass = SolutionServiceTest, testInstance = com.cquacmer.service.SolutionServiceTest@261d8190, testMethod = query@SolutionServiceTest, testException = [null], mergedContextConfiguration = [MergedContextConfiguration@34448e6c testClass = SolutionServiceTest, locations = '{classpath:spring.xml, classpath:spring-hibernate.xml}', classes = '{}', contextInitializerClasses = '[]', activeProfiles = '{}', contextLoader = 'org.springframework.test.context.support.DelegatingSmartContextLoader', parent = [null]]]
+[INFO][2015-11-23 11:30:46,579][org.springframework.context.support.GenericApplicationContext]Closing org.springframework.context.support.GenericApplicationContext@2ef5e5e3: startup date [Mon Nov 23 11:30:42 CST 2015]; root of context hierarchy
+[INFO][2015-11-23 11:30:46,581][org.springframework.beans.factory.support.DefaultListableBeanFactory]Destroying singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@5906ebcb: defining beans [org.springframework.beans.factory.config.PropertyPlaceholderConfigurer#0,codeController,homeController,loginController,noticeController,problemController,solutionController,summaryController,userController,aCRecordDao,noticeDao,problemDao,solutionDao,userDao,loginService,noticeService,problemService,solutionService,userService,Hust,org.springframework.context.annotation.internalConfigurationAnnotationProcessor,org.springframework.context.annotation.internalAutowiredAnnotationProcessor,org.springframework.context.annotation.internalRequiredAnnotationProcessor,org.springframework.context.annotation.internalCommonAnnotationProcessor,org.springframework.context.annotation.internalPersistenceAnnotationProcessor,dataSource,sessionFactory,transactionManager,transactionAdvice,org.springframework.aop.config.internalAutoProxyCreator,transactionPointcut,org.springframework.aop.support.DefaultBeanFactoryPointcutAdvisor#0,org.springframework.context.annotation.ConfigurationClassPostProcessor.importAwareProcessor]; root of factory hierarchy
+[INFO][2015-11-23 11:30:46,598][com.alibaba.druid.pool.DruidDataSource]{dataSource-1} closed
+[INFO][2015-11-23 11:31:06,221][org.springframework.beans.factory.xml.XmlBeanDefinitionReader]Loading XML bean definitions from class path resource [spring.xml]
+[INFO][2015-11-23 11:31:06,503][org.springframework.context.annotation.ClassPathBeanDefinitionScanner]JSR-250 'javax.annotation.ManagedBean' found and supported for component scanning
+[INFO][2015-11-23 11:31:06,507][org.springframework.context.annotation.ClassPathBeanDefinitionScanner]JSR-330 'javax.inject.Named' annotation found and supported for component scanning
+[INFO][2015-11-23 11:31:06,726][org.springframework.beans.factory.xml.XmlBeanDefinitionReader]Loading XML bean definitions from class path resource [spring-hibernate.xml]
+[INFO][2015-11-23 11:31:07,073][org.springframework.context.support.GenericApplicationContext]Refreshing org.springframework.context.support.GenericApplicationContext@2ef5e5e3: startup date [Mon Nov 23 11:31:07 CST 2015]; root of context hierarchy
+[INFO][2015-11-23 11:31:07,562][org.springframework.beans.factory.config.PropertyPlaceholderConfigurer]Loading properties file from class path resource [config.properties]
+[INFO][2015-11-23 11:31:07,592][org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor]JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+[INFO][2015-11-23 11:31:07,703][org.springframework.beans.factory.support.DefaultListableBeanFactory]Pre-instantiating singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@5906ebcb: defining beans [org.springframework.beans.factory.config.PropertyPlaceholderConfigurer#0,codeController,homeController,loginController,noticeController,problemController,solutionController,summaryController,userController,aCRecordDao,noticeDao,problemDao,solutionDao,userDao,loginService,noticeService,problemService,solutionService,userService,Hust,org.springframework.context.annotation.internalConfigurationAnnotationProcessor,org.springframework.context.annotation.internalAutowiredAnnotationProcessor,org.springframework.context.annotation.internalRequiredAnnotationProcessor,org.springframework.context.annotation.internalCommonAnnotationProcessor,org.springframework.context.annotation.internalPersistenceAnnotationProcessor,dataSource,sessionFactory,transactionManager,transactionAdvice,org.springframework.aop.config.internalAutoProxyCreator,transactionPointcut,org.springframework.aop.support.DefaultBeanFactoryPointcutAdvisor#0,org.springframework.context.annotation.ConfigurationClassPostProcessor.importAwareProcessor]; root of factory hierarchy
+[ERROR][2015-11-23 11:31:08,311][com.alibaba.druid.pool.DruidAbstractDataSource]maxIdle is deprecated
+[INFO][2015-11-23 11:31:08,415][com.alibaba.druid.pool.DruidDataSource]{dataSource-1} inited
+[INFO][2015-11-23 11:31:08,741][org.hibernate.annotations.common.Version]HCANN000001: Hibernate Commons Annotations {4.0.2.Final}
+[INFO][2015-11-23 11:31:08,752][org.hibernate.Version]HHH000412: Hibernate Core {4.2.5.Final}
+[INFO][2015-11-23 11:31:08,759][org.hibernate.cfg.Environment]HHH000206: hibernate.properties not found
+[INFO][2015-11-23 11:31:08,763][org.hibernate.cfg.Environment]HHH000021: Bytecode provider name : javassist
+[INFO][2015-11-23 11:31:09,299][org.hibernate.dialect.Dialect]HHH000400: Using dialect: org.hibernate.dialect.MySQLDialect
+[INFO][2015-11-23 11:31:09,475][org.hibernate.engine.transaction.internal.TransactionFactoryInitiator]HHH000399: Using default transaction strategy (direct JDBC transactions)
+[INFO][2015-11-23 11:31:09,480][org.hibernate.hql.internal.ast.ASTQueryTranslatorFactory]HHH000397: Using ASTQueryTranslatorFactory
+[INFO][2015-11-23 11:31:09,893][org.hibernate.tool.hbm2ddl.SchemaUpdate]HHH000228: Running hbm2ddl schema update
+[INFO][2015-11-23 11:31:09,893][org.hibernate.tool.hbm2ddl.SchemaUpdate]HHH000102: Fetching database metadata
+[INFO][2015-11-23 11:31:09,902][org.hibernate.tool.hbm2ddl.SchemaUpdate]HHH000396: Updating schema
+[INFO][2015-11-23 11:31:09,942][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000261: Table found: cquacm.acrecord
+[INFO][2015-11-23 11:31:09,942][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000037: Columns: [pid, id, source, username]
+[INFO][2015-11-23 11:31:09,943][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000108: Foreign keys: []
+[INFO][2015-11-23 11:31:09,945][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000126: Indexes: [primary]
+[INFO][2015-11-23 11:31:09,970][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000261: Table found: cquacm.hustaccode
+[INFO][2015-11-23 11:31:09,970][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000037: Columns: [memsize, code, submit, language, pid, id, time, codelength, username]
+[INFO][2015-11-23 11:31:09,971][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000108: Foreign keys: []
+[INFO][2015-11-23 11:31:09,971][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000126: Indexes: [primary]
+[INFO][2015-11-23 11:31:09,987][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000261: Table found: cquacm.notice
+[INFO][2015-11-23 11:31:09,987][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000037: Columns: [id, time, title, content, username]
+[INFO][2015-11-23 11:31:09,988][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000108: Foreign keys: []
+[INFO][2015-11-23 11:31:09,988][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000126: Indexes: [primary]
+[INFO][2015-11-23 11:31:10,007][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000261: Table found: cquacm.problem
+[INFO][2015-11-23 11:31:10,009][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000037: Columns: [ojid, level, ojname, id, tags]
+[INFO][2015-11-23 11:31:10,009][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000108: Foreign keys: []
+[INFO][2015-11-23 11:31:10,010][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000126: Indexes: [primary]
+[INFO][2015-11-23 11:31:10,027][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000261: Table found: cquacm.solution
+[INFO][2015-11-23 11:31:10,027][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000037: Columns: [code, solution, submit, pid, id, username]
+[INFO][2015-11-23 11:31:10,028][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000108: Foreign keys: [fk_8tvulqof7nk1vkm7oenb55130]
+[INFO][2015-11-23 11:31:10,028][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000126: Indexes: [fk_8tvulqof7nk1vkm7oenb55130, primary]
+[INFO][2015-11-23 11:31:10,045][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000261: Table found: cquacm.user
+[INFO][2015-11-23 11:31:10,046][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000037: Columns: [fzu, uva, thirt, campus, codeforces, poj, telephone, blog, password, zoj, major, idcard, schoolid, name, hdu, id, email, hust_name, username]
+[INFO][2015-11-23 11:31:10,047][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000108: Foreign keys: []
+[INFO][2015-11-23 11:31:10,047][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000126: Indexes: [primary]
+[INFO][2015-11-23 11:31:10,049][org.hibernate.tool.hbm2ddl.SchemaUpdate]HHH000232: Schema update complete
+[INFO][2015-11-23 11:31:10,321][org.springframework.orm.hibernate4.HibernateTransactionManager]Using DataSource [{
+	CreateTime:"2015-11-23 11:31:08",
+	ActiveCount:0,
+	PoolingCount:1,
+	CreateCount:1,
+	DestroyCount:0,
+	CloseCount:2,
+	ConnectCount:2,
+	Connections:[
+		{ID:832432849, ConnectTime:"2015-11-23 11:31:09", UseCount:2, LastActiveTime:"2015-11-23 11:31:10"}
+	]
+}] of Hibernate SessionFactory for HibernateTransactionManager
+[INFO][2015-11-23 11:31:10,489][org.springframework.test.context.transaction.TransactionalTestExecutionListener]Began transaction (1): transaction manager [org.springframework.orm.hibernate4.HibernateTransactionManager@7e0aadd0]; rollback [false]
+[WARN][2015-11-23 11:31:10,677][org.hibernate.hql.internal.ast.HqlSqlWalker][DEPRECATION] Encountered positional parameter near line 1, column 42.  Positional parameter are considered deprecated; use named parameters or JPA-style positional parameters instead.
+[INFO][2015-11-23 11:31:10,971][org.springframework.test.context.transaction.TransactionalTestExecutionListener]Committed transaction after test execution for test context [TestContext@78b236a0 testClass = SolutionServiceTest, testInstance = com.cquacmer.service.SolutionServiceTest@261d8190, testMethod = query@SolutionServiceTest, testException = [null], mergedContextConfiguration = [MergedContextConfiguration@34448e6c testClass = SolutionServiceTest, locations = '{classpath:spring.xml, classpath:spring-hibernate.xml}', classes = '{}', contextInitializerClasses = '[]', activeProfiles = '{}', contextLoader = 'org.springframework.test.context.support.DelegatingSmartContextLoader', parent = [null]]]
+[INFO][2015-11-23 11:31:11,004][org.springframework.context.support.GenericApplicationContext]Closing org.springframework.context.support.GenericApplicationContext@2ef5e5e3: startup date [Mon Nov 23 11:31:07 CST 2015]; root of context hierarchy
+[INFO][2015-11-23 11:31:11,006][org.springframework.beans.factory.support.DefaultListableBeanFactory]Destroying singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@5906ebcb: defining beans [org.springframework.beans.factory.config.PropertyPlaceholderConfigurer#0,codeController,homeController,loginController,noticeController,problemController,solutionController,summaryController,userController,aCRecordDao,noticeDao,problemDao,solutionDao,userDao,loginService,noticeService,problemService,solutionService,userService,Hust,org.springframework.context.annotation.internalConfigurationAnnotationProcessor,org.springframework.context.annotation.internalAutowiredAnnotationProcessor,org.springframework.context.annotation.internalRequiredAnnotationProcessor,org.springframework.context.annotation.internalCommonAnnotationProcessor,org.springframework.context.annotation.internalPersistenceAnnotationProcessor,dataSource,sessionFactory,transactionManager,transactionAdvice,org.springframework.aop.config.internalAutoProxyCreator,transactionPointcut,org.springframework.aop.support.DefaultBeanFactoryPointcutAdvisor#0,org.springframework.context.annotation.ConfigurationClassPostProcessor.importAwareProcessor]; root of factory hierarchy
+[INFO][2015-11-23 11:31:11,032][com.alibaba.druid.pool.DruidDataSource]{dataSource-1} closed
+[INFO][2015-11-23 11:34:14,636][org.springframework.beans.factory.xml.XmlBeanDefinitionReader]Loading XML bean definitions from class path resource [spring.xml]
+[INFO][2015-11-23 11:34:14,952][org.springframework.context.annotation.ClassPathBeanDefinitionScanner]JSR-250 'javax.annotation.ManagedBean' found and supported for component scanning
+[INFO][2015-11-23 11:34:14,956][org.springframework.context.annotation.ClassPathBeanDefinitionScanner]JSR-330 'javax.inject.Named' annotation found and supported for component scanning
+[INFO][2015-11-23 11:34:15,199][org.springframework.beans.factory.xml.XmlBeanDefinitionReader]Loading XML bean definitions from class path resource [spring-hibernate.xml]
+[INFO][2015-11-23 11:34:15,327][org.springframework.context.support.GenericApplicationContext]Refreshing org.springframework.context.support.GenericApplicationContext@2ef5e5e3: startup date [Mon Nov 23 11:34:15 CST 2015]; root of context hierarchy
+[INFO][2015-11-23 11:34:15,804][org.springframework.beans.factory.config.PropertyPlaceholderConfigurer]Loading properties file from class path resource [config.properties]
+[INFO][2015-11-23 11:34:15,840][org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor]JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+[INFO][2015-11-23 11:34:15,973][org.springframework.beans.factory.support.DefaultListableBeanFactory]Pre-instantiating singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@5906ebcb: defining beans [org.springframework.beans.factory.config.PropertyPlaceholderConfigurer#0,codeController,homeController,loginController,noticeController,problemController,solutionController,summaryController,userController,aCRecordDao,noticeDao,problemDao,solutionDao,userDao,loginService,noticeService,problemService,solutionService,userService,Hust,org.springframework.context.annotation.internalConfigurationAnnotationProcessor,org.springframework.context.annotation.internalAutowiredAnnotationProcessor,org.springframework.context.annotation.internalRequiredAnnotationProcessor,org.springframework.context.annotation.internalCommonAnnotationProcessor,org.springframework.context.annotation.internalPersistenceAnnotationProcessor,dataSource,sessionFactory,transactionManager,transactionAdvice,org.springframework.aop.config.internalAutoProxyCreator,transactionPointcut,org.springframework.aop.support.DefaultBeanFactoryPointcutAdvisor#0,org.springframework.context.annotation.ConfigurationClassPostProcessor.importAwareProcessor]; root of factory hierarchy
+[ERROR][2015-11-23 11:34:16,845][com.alibaba.druid.pool.DruidAbstractDataSource]maxIdle is deprecated
+[INFO][2015-11-23 11:34:17,034][com.alibaba.druid.pool.DruidDataSource]{dataSource-1} inited
+[INFO][2015-11-23 11:34:17,358][org.hibernate.annotations.common.Version]HCANN000001: Hibernate Commons Annotations {4.0.2.Final}
+[INFO][2015-11-23 11:34:17,381][org.hibernate.Version]HHH000412: Hibernate Core {4.2.5.Final}
+[INFO][2015-11-23 11:34:17,389][org.hibernate.cfg.Environment]HHH000206: hibernate.properties not found
+[INFO][2015-11-23 11:34:17,392][org.hibernate.cfg.Environment]HHH000021: Bytecode provider name : javassist
+[INFO][2015-11-23 11:34:18,205][org.hibernate.dialect.Dialect]HHH000400: Using dialect: org.hibernate.dialect.MySQLDialect
+[INFO][2015-11-23 11:34:18,429][org.springframework.beans.factory.support.DefaultListableBeanFactory]Destroying singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@5906ebcb: defining beans [org.springframework.beans.factory.config.PropertyPlaceholderConfigurer#0,codeController,homeController,loginController,noticeController,problemController,solutionController,summaryController,userController,aCRecordDao,noticeDao,problemDao,solutionDao,userDao,loginService,noticeService,problemService,solutionService,userService,Hust,org.springframework.context.annotation.internalConfigurationAnnotationProcessor,org.springframework.context.annotation.internalAutowiredAnnotationProcessor,org.springframework.context.annotation.internalRequiredAnnotationProcessor,org.springframework.context.annotation.internalCommonAnnotationProcessor,org.springframework.context.annotation.internalPersistenceAnnotationProcessor,dataSource,sessionFactory,transactionManager,transactionAdvice,org.springframework.aop.config.internalAutoProxyCreator,transactionPointcut,org.springframework.aop.support.DefaultBeanFactoryPointcutAdvisor#0,org.springframework.context.annotation.ConfigurationClassPostProcessor.importAwareProcessor]; root of factory hierarchy
+[INFO][2015-11-23 11:34:18,443][com.alibaba.druid.pool.DruidDataSource]{dataSource-1} closed
+[ERROR][2015-11-23 11:34:18,444][org.springframework.test.context.TestContextManager]Caught exception while allowing TestExecutionListener [org.springframework.test.context.web.ServletTestExecutionListener@7f6f61c8] to prepare test instance [com.cquacmer.service.SolutionServiceTest@4c2cc639]
+java.lang.IllegalStateException: Failed to load ApplicationContext
+	at org.springframework.test.context.CacheAwareContextLoaderDelegate.loadContext(CacheAwareContextLoaderDelegate.java:99)
+	at org.springframework.test.context.TestContext.getApplicationContext(TestContext.java:122)
+	at org.springframework.test.context.web.ServletTestExecutionListener.setUpRequestContextIfNecessary(ServletTestExecutionListener.java:105)
+	at org.springframework.test.context.web.ServletTestExecutionListener.prepareTestInstance(ServletTestExecutionListener.java:74)
+	at org.springframework.test.context.TestContextManager.prepareTestInstance(TestContextManager.java:312)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.createTest(SpringJUnit4ClassRunner.java:211)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner$1.runReflectiveCall(SpringJUnit4ClassRunner.java:288)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.methodBlock(SpringJUnit4ClassRunner.java:284)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:231)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:88)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:238)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:63)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:236)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:53)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:229)
+	at org.springframework.test.context.junit4.statements.RunBeforeTestClassCallbacks.evaluate(RunBeforeTestClassCallbacks.java:61)
+	at org.springframework.test.context.junit4.statements.RunAfterTestClassCallbacks.evaluate(RunAfterTestClassCallbacks.java:71)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:309)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.run(SpringJUnit4ClassRunner.java:174)
+	at org.junit.runner.JUnitCore.run(JUnitCore.java:160)
+	at com.intellij.junit4.JUnit4IdeaTestRunner.startRunnerWithArgs(JUnit4IdeaTestRunner.java:78)
+	at com.intellij.rt.execution.junit.JUnitStarter.prepareStreamsAndStart(JUnitStarter.java:212)
+	at com.intellij.rt.execution.junit.JUnitStarter.main(JUnitStarter.java:68)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:497)
+	at com.intellij.rt.execution.application.AppMain.main(AppMain.java:140)
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'homeController': Injection of resource dependencies failed; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'noticeService': Injection of resource dependencies failed; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'noticeDao': Injection of resource dependencies failed; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'sessionFactory' defined in class path resource [spring-hibernate.xml]: Invocation of init method failed; nested exception is org.hibernate.AnnotationException: mappedBy reference an unknown target entity property: com.cquacmer.model.Solution.solutions in com.cquacmer.model.Problem.solutions
+	at org.springframework.context.annotation.CommonAnnotationBeanPostProcessor.postProcessPropertyValues(CommonAnnotationBeanPostProcessor.java:306)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1116)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:519)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:458)
+	at org.springframework.beans.factory.support.AbstractBeanFactory$1.getObject(AbstractBeanFactory.java:295)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:223)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:292)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:194)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:628)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:932)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:479)
+	at org.springframework.test.context.support.AbstractGenericContextLoader.loadContext(AbstractGenericContextLoader.java:120)
+	at org.springframework.test.context.support.AbstractGenericContextLoader.loadContext(AbstractGenericContextLoader.java:60)
+	at org.springframework.test.context.support.AbstractDelegatingSmartContextLoader.delegateLoading(AbstractDelegatingSmartContextLoader.java:100)
+	at org.springframework.test.context.support.AbstractDelegatingSmartContextLoader.loadContext(AbstractDelegatingSmartContextLoader.java:248)
+	at org.springframework.test.context.CacheAwareContextLoaderDelegate.loadContextInternal(CacheAwareContextLoaderDelegate.java:64)
+	at org.springframework.test.context.CacheAwareContextLoaderDelegate.loadContext(CacheAwareContextLoaderDelegate.java:91)
+	... 28 more
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'noticeService': Injection of resource dependencies failed; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'noticeDao': Injection of resource dependencies failed; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'sessionFactory' defined in class path resource [spring-hibernate.xml]: Invocation of init method failed; nested exception is org.hibernate.AnnotationException: mappedBy reference an unknown target entity property: com.cquacmer.model.Solution.solutions in com.cquacmer.model.Problem.solutions
+	at org.springframework.context.annotation.CommonAnnotationBeanPostProcessor.postProcessPropertyValues(CommonAnnotationBeanPostProcessor.java:306)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1116)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:519)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:458)
+	at org.springframework.beans.factory.support.AbstractBeanFactory$1.getObject(AbstractBeanFactory.java:295)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:223)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:292)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:198)
+	at org.springframework.context.annotation.CommonAnnotationBeanPostProcessor.autowireResource(CommonAnnotationBeanPostProcessor.java:442)
+	at org.springframework.context.annotation.CommonAnnotationBeanPostProcessor.getResource(CommonAnnotationBeanPostProcessor.java:416)
+	at org.springframework.context.annotation.CommonAnnotationBeanPostProcessor$ResourceElement.getResourceToInject(CommonAnnotationBeanPostProcessor.java:550)
+	at org.springframework.beans.factory.annotation.InjectionMetadata$InjectedElement.inject(InjectionMetadata.java:150)
+	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:87)
+	at org.springframework.context.annotation.CommonAnnotationBeanPostProcessor.postProcessPropertyValues(CommonAnnotationBeanPostProcessor.java:303)
+	... 44 more
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'noticeDao': Injection of resource dependencies failed; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'sessionFactory' defined in class path resource [spring-hibernate.xml]: Invocation of init method failed; nested exception is org.hibernate.AnnotationException: mappedBy reference an unknown target entity property: com.cquacmer.model.Solution.solutions in com.cquacmer.model.Problem.solutions
+	at org.springframework.context.annotation.CommonAnnotationBeanPostProcessor.postProcessPropertyValues(CommonAnnotationBeanPostProcessor.java:306)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1116)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:519)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:458)
+	at org.springframework.beans.factory.support.AbstractBeanFactory$1.getObject(AbstractBeanFactory.java:295)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:223)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:292)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:198)
+	at org.springframework.context.annotation.CommonAnnotationBeanPostProcessor.autowireResource(CommonAnnotationBeanPostProcessor.java:442)
+	at org.springframework.context.annotation.CommonAnnotationBeanPostProcessor.getResource(CommonAnnotationBeanPostProcessor.java:416)
+	at org.springframework.context.annotation.CommonAnnotationBeanPostProcessor$ResourceElement.getResourceToInject(CommonAnnotationBeanPostProcessor.java:550)
+	at org.springframework.beans.factory.annotation.InjectionMetadata$InjectedElement.inject(InjectionMetadata.java:150)
+	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:87)
+	at org.springframework.context.annotation.CommonAnnotationBeanPostProcessor.postProcessPropertyValues(CommonAnnotationBeanPostProcessor.java:303)
+	... 57 more
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'sessionFactory' defined in class path resource [spring-hibernate.xml]: Invocation of init method failed; nested exception is org.hibernate.AnnotationException: mappedBy reference an unknown target entity property: com.cquacmer.model.Solution.solutions in com.cquacmer.model.Problem.solutions
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1482)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:521)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:458)
+	at org.springframework.beans.factory.support.AbstractBeanFactory$1.getObject(AbstractBeanFactory.java:295)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:223)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:292)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:198)
+	at org.springframework.context.annotation.CommonAnnotationBeanPostProcessor.autowireResource(CommonAnnotationBeanPostProcessor.java:442)
+	at org.springframework.context.annotation.CommonAnnotationBeanPostProcessor.getResource(CommonAnnotationBeanPostProcessor.java:416)
+	at org.springframework.context.annotation.CommonAnnotationBeanPostProcessor$ResourceElement.getResourceToInject(CommonAnnotationBeanPostProcessor.java:550)
+	at org.springframework.beans.factory.annotation.InjectionMetadata$InjectedElement.inject(InjectionMetadata.java:159)
+	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:87)
+	at org.springframework.context.annotation.CommonAnnotationBeanPostProcessor.postProcessPropertyValues(CommonAnnotationBeanPostProcessor.java:303)
+	... 70 more
+Caused by: org.hibernate.AnnotationException: mappedBy reference an unknown target entity property: com.cquacmer.model.Solution.solutions in com.cquacmer.model.Problem.solutions
+	at org.hibernate.cfg.annotations.CollectionBinder.bindStarToManySecondPass(CollectionBinder.java:708)
+	at org.hibernate.cfg.annotations.CollectionBinder$1.secondPass(CollectionBinder.java:668)
+	at org.hibernate.cfg.CollectionSecondPass.doSecondPass(CollectionSecondPass.java:69)
+	at org.hibernate.cfg.Configuration.originalSecondPassCompile(Configuration.java:1632)
+	at org.hibernate.cfg.Configuration.secondPassCompile(Configuration.java:1390)
+	at org.hibernate.cfg.Configuration.buildSessionFactory(Configuration.java:1777)
+	at org.hibernate.cfg.Configuration.buildSessionFactory(Configuration.java:1861)
+	at org.springframework.orm.hibernate4.LocalSessionFactoryBuilder.buildSessionFactory(LocalSessionFactoryBuilder.java:247)
+	at org.springframework.orm.hibernate4.LocalSessionFactoryBean.buildSessionFactory(LocalSessionFactoryBean.java:373)
+	at org.springframework.orm.hibernate4.LocalSessionFactoryBean.afterPropertiesSet(LocalSessionFactoryBean.java:358)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1541)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1479)
+	... 82 more
+[INFO][2015-11-23 11:35:02,785][org.springframework.beans.factory.xml.XmlBeanDefinitionReader]Loading XML bean definitions from class path resource [spring.xml]
+[INFO][2015-11-23 11:35:03,139][org.springframework.context.annotation.ClassPathBeanDefinitionScanner]JSR-250 'javax.annotation.ManagedBean' found and supported for component scanning
+[INFO][2015-11-23 11:35:03,142][org.springframework.context.annotation.ClassPathBeanDefinitionScanner]JSR-330 'javax.inject.Named' annotation found and supported for component scanning
+[INFO][2015-11-23 11:35:03,381][org.springframework.beans.factory.xml.XmlBeanDefinitionReader]Loading XML bean definitions from class path resource [spring-hibernate.xml]
+[INFO][2015-11-23 11:35:03,546][org.springframework.context.support.GenericApplicationContext]Refreshing org.springframework.context.support.GenericApplicationContext@17c386de: startup date [Mon Nov 23 11:35:03 CST 2015]; root of context hierarchy
+[INFO][2015-11-23 11:35:03,839][org.springframework.beans.factory.config.PropertyPlaceholderConfigurer]Loading properties file from class path resource [config.properties]
+[INFO][2015-11-23 11:35:03,863][org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor]JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+[INFO][2015-11-23 11:35:03,941][org.springframework.beans.factory.support.DefaultListableBeanFactory]Pre-instantiating singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@6950ed69: defining beans [org.springframework.beans.factory.config.PropertyPlaceholderConfigurer#0,codeController,homeController,loginController,noticeController,problemController,solutionController,summaryController,userController,aCRecordDao,noticeDao,problemDao,solutionDao,userDao,loginService,noticeService,problemService,solutionService,userService,Hust,org.springframework.context.annotation.internalConfigurationAnnotationProcessor,org.springframework.context.annotation.internalAutowiredAnnotationProcessor,org.springframework.context.annotation.internalRequiredAnnotationProcessor,org.springframework.context.annotation.internalCommonAnnotationProcessor,org.springframework.context.annotation.internalPersistenceAnnotationProcessor,dataSource,sessionFactory,transactionManager,transactionAdvice,org.springframework.aop.config.internalAutoProxyCreator,transactionPointcut,org.springframework.aop.support.DefaultBeanFactoryPointcutAdvisor#0,org.springframework.context.annotation.ConfigurationClassPostProcessor.importAwareProcessor]; root of factory hierarchy
+[ERROR][2015-11-23 11:35:04,602][com.alibaba.druid.pool.DruidAbstractDataSource]maxIdle is deprecated
+[INFO][2015-11-23 11:35:04,801][com.alibaba.druid.pool.DruidDataSource]{dataSource-1} inited
+[INFO][2015-11-23 11:35:05,346][org.hibernate.annotations.common.Version]HCANN000001: Hibernate Commons Annotations {4.0.2.Final}
+[INFO][2015-11-23 11:35:05,366][org.hibernate.Version]HHH000412: Hibernate Core {4.2.5.Final}
+[INFO][2015-11-23 11:35:05,374][org.hibernate.cfg.Environment]HHH000206: hibernate.properties not found
+[INFO][2015-11-23 11:35:05,377][org.hibernate.cfg.Environment]HHH000021: Bytecode provider name : javassist
+[INFO][2015-11-23 11:35:06,146][org.hibernate.dialect.Dialect]HHH000400: Using dialect: org.hibernate.dialect.MySQLDialect
+[INFO][2015-11-23 11:35:06,413][org.hibernate.engine.transaction.internal.TransactionFactoryInitiator]HHH000399: Using default transaction strategy (direct JDBC transactions)
+[INFO][2015-11-23 11:35:06,421][org.hibernate.hql.internal.ast.ASTQueryTranslatorFactory]HHH000397: Using ASTQueryTranslatorFactory
+[INFO][2015-11-23 11:35:07,093][org.hibernate.tool.hbm2ddl.SchemaUpdate]HHH000228: Running hbm2ddl schema update
+[INFO][2015-11-23 11:35:07,094][org.hibernate.tool.hbm2ddl.SchemaUpdate]HHH000102: Fetching database metadata
+[INFO][2015-11-23 11:35:07,101][org.hibernate.tool.hbm2ddl.SchemaUpdate]HHH000396: Updating schema
+[INFO][2015-11-23 11:35:07,150][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000261: Table found: cquacm.acrecord
+[INFO][2015-11-23 11:35:07,151][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000037: Columns: [pid, id, source, username]
+[INFO][2015-11-23 11:35:07,151][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000108: Foreign keys: []
+[INFO][2015-11-23 11:35:07,155][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000126: Indexes: [primary]
+[INFO][2015-11-23 11:35:07,183][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000261: Table found: cquacm.hustaccode
+[INFO][2015-11-23 11:35:07,184][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000037: Columns: [memsize, code, submit, language, pid, id, time, codelength, username]
+[INFO][2015-11-23 11:35:07,185][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000108: Foreign keys: []
+[INFO][2015-11-23 11:35:07,185][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000126: Indexes: [primary]
+[INFO][2015-11-23 11:35:07,203][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000261: Table found: cquacm.notice
+[INFO][2015-11-23 11:35:07,204][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000037: Columns: [id, time, title, content, username]
+[INFO][2015-11-23 11:35:07,204][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000108: Foreign keys: []
+[INFO][2015-11-23 11:35:07,205][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000126: Indexes: [primary]
+[INFO][2015-11-23 11:35:07,223][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000261: Table found: cquacm.problem
+[INFO][2015-11-23 11:35:07,224][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000037: Columns: [ojid, level, ojname, id, tags]
+[INFO][2015-11-23 11:35:07,224][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000108: Foreign keys: []
+[INFO][2015-11-23 11:35:07,225][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000126: Indexes: [primary]
+[INFO][2015-11-23 11:35:07,248][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000261: Table found: cquacm.problem_solution
+[INFO][2015-11-23 11:35:07,249][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000037: Columns: [problem_id, solutions_id]
+[INFO][2015-11-23 11:35:07,249][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000108: Foreign keys: [fk_llsltderwl5mso129yv474mka, fk_fsvgfqumker6vt2eliu7vm8n8]
+[INFO][2015-11-23 11:35:07,250][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000126: Indexes: [uk_fsvgfqumker6vt2eliu7vm8n8, fk_llsltderwl5mso129yv474mka, fk_fsvgfqumker6vt2eliu7vm8n8]
+[INFO][2015-11-23 11:35:07,267][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000261: Table found: cquacm.solution
+[INFO][2015-11-23 11:35:07,268][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000037: Columns: [code, solution, submit, pid, id, username]
+[INFO][2015-11-23 11:35:07,269][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000108: Foreign keys: [fk_8tvulqof7nk1vkm7oenb55130]
+[INFO][2015-11-23 11:35:07,269][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000126: Indexes: [fk_8tvulqof7nk1vkm7oenb55130, primary]
+[INFO][2015-11-23 11:35:07,287][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000261: Table found: cquacm.user
+[INFO][2015-11-23 11:35:07,289][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000037: Columns: [fzu, uva, thirt, campus, codeforces, poj, telephone, blog, password, zoj, major, idcard, schoolid, name, hdu, id, email, hust_name, username]
+[INFO][2015-11-23 11:35:07,290][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000108: Foreign keys: []
+[INFO][2015-11-23 11:35:07,291][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000126: Indexes: [primary]
+[INFO][2015-11-23 11:35:07,292][org.hibernate.tool.hbm2ddl.SchemaUpdate]HHH000232: Schema update complete
+[INFO][2015-11-23 11:35:07,671][org.springframework.orm.hibernate4.HibernateTransactionManager]Using DataSource [{
+	CreateTime:"2015-11-23 11:35:04",
+	ActiveCount:0,
+	PoolingCount:1,
+	CreateCount:1,
+	DestroyCount:0,
+	CloseCount:2,
+	ConnectCount:2,
+	Connections:[
+		{ID:975372289, ConnectTime:"2015-11-23 11:35:06", UseCount:2, LastActiveTime:"2015-11-23 11:35:07"}
+	]
+}] of Hibernate SessionFactory for HibernateTransactionManager
+[INFO][2015-11-23 11:35:07,887][org.springframework.test.context.transaction.TransactionalTestExecutionListener]Began transaction (1): transaction manager [org.springframework.orm.hibernate4.HibernateTransactionManager@4cb40e3b]; rollback [false]
+[WARN][2015-11-23 11:35:08,080][org.hibernate.hql.internal.ast.HqlSqlWalker][DEPRECATION] Encountered positional parameter near line 1, column 42.  Positional parameter are considered deprecated; use named parameters or JPA-style positional parameters instead.
+[INFO][2015-11-23 11:35:08,599][org.springframework.test.context.transaction.TransactionalTestExecutionListener]Committed transaction after test execution for test context [TestContext@65383667 testClass = SolutionServiceTest, testInstance = com.cquacmer.service.SolutionServiceTest@63cd2cd2, testMethod = query@SolutionServiceTest, testException = [null], mergedContextConfiguration = [MergedContextConfiguration@557a84fe testClass = SolutionServiceTest, locations = '{classpath:spring.xml, classpath:spring-hibernate.xml}', classes = '{}', contextInitializerClasses = '[]', activeProfiles = '{}', contextLoader = 'org.springframework.test.context.support.DelegatingSmartContextLoader', parent = [null]]]
+[INFO][2015-11-23 11:35:08,694][org.springframework.context.support.GenericApplicationContext]Closing org.springframework.context.support.GenericApplicationContext@17c386de: startup date [Mon Nov 23 11:35:03 CST 2015]; root of context hierarchy
+[INFO][2015-11-23 11:35:08,695][org.springframework.beans.factory.support.DefaultListableBeanFactory]Destroying singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@6950ed69: defining beans [org.springframework.beans.factory.config.PropertyPlaceholderConfigurer#0,codeController,homeController,loginController,noticeController,problemController,solutionController,summaryController,userController,aCRecordDao,noticeDao,problemDao,solutionDao,userDao,loginService,noticeService,problemService,solutionService,userService,Hust,org.springframework.context.annotation.internalConfigurationAnnotationProcessor,org.springframework.context.annotation.internalAutowiredAnnotationProcessor,org.springframework.context.annotation.internalRequiredAnnotationProcessor,org.springframework.context.annotation.internalCommonAnnotationProcessor,org.springframework.context.annotation.internalPersistenceAnnotationProcessor,dataSource,sessionFactory,transactionManager,transactionAdvice,org.springframework.aop.config.internalAutoProxyCreator,transactionPointcut,org.springframework.aop.support.DefaultBeanFactoryPointcutAdvisor#0,org.springframework.context.annotation.ConfigurationClassPostProcessor.importAwareProcessor]; root of factory hierarchy
+[INFO][2015-11-23 11:35:08,719][com.alibaba.druid.pool.DruidDataSource]{dataSource-1} closed
+[INFO][2015-11-23 11:37:19,776][org.springframework.beans.factory.xml.XmlBeanDefinitionReader]Loading XML bean definitions from class path resource [spring.xml]
+[INFO][2015-11-23 11:37:20,049][org.springframework.context.annotation.ClassPathBeanDefinitionScanner]JSR-250 'javax.annotation.ManagedBean' found and supported for component scanning
+[INFO][2015-11-23 11:37:20,051][org.springframework.context.annotation.ClassPathBeanDefinitionScanner]JSR-330 'javax.inject.Named' annotation found and supported for component scanning
+[INFO][2015-11-23 11:37:20,395][org.springframework.beans.factory.xml.XmlBeanDefinitionReader]Loading XML bean definitions from class path resource [spring-hibernate.xml]
+[INFO][2015-11-23 11:37:20,780][org.springframework.context.support.GenericApplicationContext]Refreshing org.springframework.context.support.GenericApplicationContext@2ef5e5e3: startup date [Mon Nov 23 11:37:20 CST 2015]; root of context hierarchy
+[INFO][2015-11-23 11:37:21,112][org.springframework.beans.factory.config.PropertyPlaceholderConfigurer]Loading properties file from class path resource [config.properties]
+[INFO][2015-11-23 11:37:21,125][org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor]JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+[INFO][2015-11-23 11:37:21,187][org.springframework.beans.factory.support.DefaultListableBeanFactory]Pre-instantiating singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@5906ebcb: defining beans [org.springframework.beans.factory.config.PropertyPlaceholderConfigurer#0,codeController,homeController,loginController,noticeController,problemController,solutionController,summaryController,userController,aCRecordDao,noticeDao,problemDao,solutionDao,userDao,loginService,noticeService,problemService,solutionService,userService,Hust,org.springframework.context.annotation.internalConfigurationAnnotationProcessor,org.springframework.context.annotation.internalAutowiredAnnotationProcessor,org.springframework.context.annotation.internalRequiredAnnotationProcessor,org.springframework.context.annotation.internalCommonAnnotationProcessor,org.springframework.context.annotation.internalPersistenceAnnotationProcessor,dataSource,sessionFactory,transactionManager,transactionAdvice,org.springframework.aop.config.internalAutoProxyCreator,transactionPointcut,org.springframework.aop.support.DefaultBeanFactoryPointcutAdvisor#0,org.springframework.context.annotation.ConfigurationClassPostProcessor.importAwareProcessor]; root of factory hierarchy
+[ERROR][2015-11-23 11:37:21,917][com.alibaba.druid.pool.DruidAbstractDataSource]maxIdle is deprecated
+[INFO][2015-11-23 11:37:22,017][com.alibaba.druid.pool.DruidDataSource]{dataSource-1} inited
+[INFO][2015-11-23 11:37:22,284][org.hibernate.annotations.common.Version]HCANN000001: Hibernate Commons Annotations {4.0.2.Final}
+[INFO][2015-11-23 11:37:22,295][org.hibernate.Version]HHH000412: Hibernate Core {4.2.5.Final}
+[INFO][2015-11-23 11:37:22,299][org.hibernate.cfg.Environment]HHH000206: hibernate.properties not found
+[INFO][2015-11-23 11:37:22,303][org.hibernate.cfg.Environment]HHH000021: Bytecode provider name : javassist
+[INFO][2015-11-23 11:37:22,847][org.hibernate.dialect.Dialect]HHH000400: Using dialect: org.hibernate.dialect.MySQLDialect
+[INFO][2015-11-23 11:37:23,080][org.hibernate.engine.transaction.internal.TransactionFactoryInitiator]HHH000399: Using default transaction strategy (direct JDBC transactions)
+[INFO][2015-11-23 11:37:23,085][org.hibernate.hql.internal.ast.ASTQueryTranslatorFactory]HHH000397: Using ASTQueryTranslatorFactory
+[INFO][2015-11-23 11:37:23,605][org.hibernate.tool.hbm2ddl.SchemaUpdate]HHH000228: Running hbm2ddl schema update
+[INFO][2015-11-23 11:37:23,606][org.hibernate.tool.hbm2ddl.SchemaUpdate]HHH000102: Fetching database metadata
+[INFO][2015-11-23 11:37:23,612][org.hibernate.tool.hbm2ddl.SchemaUpdate]HHH000396: Updating schema
+[INFO][2015-11-23 11:37:23,666][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000261: Table found: cquacm.acrecord
+[INFO][2015-11-23 11:37:23,667][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000037: Columns: [pid, id, source, username]
+[INFO][2015-11-23 11:37:23,667][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000108: Foreign keys: []
+[INFO][2015-11-23 11:37:23,667][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000126: Indexes: [primary]
+[INFO][2015-11-23 11:37:23,685][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000261: Table found: cquacm.hustaccode
+[INFO][2015-11-23 11:37:23,685][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000037: Columns: [memsize, code, submit, language, pid, id, time, codelength, username]
+[INFO][2015-11-23 11:37:23,686][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000108: Foreign keys: []
+[INFO][2015-11-23 11:37:23,686][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000126: Indexes: [primary]
+[INFO][2015-11-23 11:37:23,708][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000261: Table found: cquacm.notice
+[INFO][2015-11-23 11:37:23,711][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000037: Columns: [id, time, title, content, username]
+[INFO][2015-11-23 11:37:23,712][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000108: Foreign keys: []
+[INFO][2015-11-23 11:37:23,713][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000126: Indexes: [primary]
+[INFO][2015-11-23 11:37:23,728][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000261: Table found: cquacm.problem
+[INFO][2015-11-23 11:37:23,728][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000037: Columns: [ojid, level, ojname, id, tags]
+[INFO][2015-11-23 11:37:23,729][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000108: Foreign keys: []
+[INFO][2015-11-23 11:37:23,729][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000126: Indexes: [primary]
+[INFO][2015-11-23 11:37:23,755][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000261: Table found: cquacm.problem_solution
+[INFO][2015-11-23 11:37:23,755][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000037: Columns: [problem_id, solutions_id]
+[INFO][2015-11-23 11:37:23,756][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000108: Foreign keys: [fk_llsltderwl5mso129yv474mka, fk_fsvgfqumker6vt2eliu7vm8n8]
+[INFO][2015-11-23 11:37:23,756][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000126: Indexes: [uk_fsvgfqumker6vt2eliu7vm8n8, fk_llsltderwl5mso129yv474mka, fk_fsvgfqumker6vt2eliu7vm8n8]
+[INFO][2015-11-23 11:37:23,782][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000261: Table found: cquacm.solution
+[INFO][2015-11-23 11:37:23,784][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000037: Columns: [code, solution, submit, pid, id, username]
+[INFO][2015-11-23 11:37:23,784][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000108: Foreign keys: [fk_8tvulqof7nk1vkm7oenb55130]
+[INFO][2015-11-23 11:37:23,785][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000126: Indexes: [fk_8tvulqof7nk1vkm7oenb55130, primary]
+[INFO][2015-11-23 11:37:23,807][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000261: Table found: cquacm.user
+[INFO][2015-11-23 11:37:23,809][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000037: Columns: [fzu, uva, thirt, campus, codeforces, poj, telephone, blog, password, zoj, major, idcard, schoolid, name, hdu, id, email, hust_name, username]
+[INFO][2015-11-23 11:37:23,810][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000108: Foreign keys: []
+[INFO][2015-11-23 11:37:23,818][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000126: Indexes: [primary]
+[INFO][2015-11-23 11:37:23,825][org.hibernate.tool.hbm2ddl.SchemaUpdate]HHH000232: Schema update complete
+[INFO][2015-11-23 11:37:24,369][org.springframework.orm.hibernate4.HibernateTransactionManager]Using DataSource [{
+	CreateTime:"2015-11-23 11:37:21",
+	ActiveCount:0,
+	PoolingCount:1,
+	CreateCount:1,
+	DestroyCount:0,
+	CloseCount:2,
+	ConnectCount:2,
+	Connections:[
+		{ID:1006624255, ConnectTime:"2015-11-23 11:37:22", UseCount:2, LastActiveTime:"2015-11-23 11:37:23"}
+	]
+}] of Hibernate SessionFactory for HibernateTransactionManager
+[INFO][2015-11-23 11:37:24,697][org.springframework.test.context.transaction.TransactionalTestExecutionListener]Began transaction (1): transaction manager [org.springframework.orm.hibernate4.HibernateTransactionManager@2427e004]; rollback [false]
+[WARN][2015-11-23 11:37:24,898][org.hibernate.hql.internal.ast.HqlSqlWalker][DEPRECATION] Encountered positional parameter near line 1, column 42.  Positional parameter are considered deprecated; use named parameters or JPA-style positional parameters instead.
+[WARN][2015-11-23 11:37:25,768][org.hibernate.hql.internal.ast.HqlSqlWalker][DEPRECATION] Encountered positional parameter near line 1, column 44.  Positional parameter are considered deprecated; use named parameters or JPA-style positional parameters instead.
+[INFO][2015-11-23 11:37:25,858][org.springframework.test.context.transaction.TransactionalTestExecutionListener]Committed transaction after test execution for test context [TestContext@697446d4 testClass = SolutionServiceTest, testInstance = com.cquacmer.service.SolutionServiceTest@76adb233, testMethod = query@SolutionServiceTest, testException = [null], mergedContextConfiguration = [MergedContextConfiguration@36074e47 testClass = SolutionServiceTest, locations = '{classpath:spring.xml, classpath:spring-hibernate.xml}', classes = '{}', contextInitializerClasses = '[]', activeProfiles = '{}', contextLoader = 'org.springframework.test.context.support.DelegatingSmartContextLoader', parent = [null]]]
+[INFO][2015-11-23 11:37:25,906][org.springframework.context.support.GenericApplicationContext]Closing org.springframework.context.support.GenericApplicationContext@2ef5e5e3: startup date [Mon Nov 23 11:37:20 CST 2015]; root of context hierarchy
+[INFO][2015-11-23 11:37:25,920][org.springframework.beans.factory.support.DefaultListableBeanFactory]Destroying singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@5906ebcb: defining beans [org.springframework.beans.factory.config.PropertyPlaceholderConfigurer#0,codeController,homeController,loginController,noticeController,problemController,solutionController,summaryController,userController,aCRecordDao,noticeDao,problemDao,solutionDao,userDao,loginService,noticeService,problemService,solutionService,userService,Hust,org.springframework.context.annotation.internalConfigurationAnnotationProcessor,org.springframework.context.annotation.internalAutowiredAnnotationProcessor,org.springframework.context.annotation.internalRequiredAnnotationProcessor,org.springframework.context.annotation.internalCommonAnnotationProcessor,org.springframework.context.annotation.internalPersistenceAnnotationProcessor,dataSource,sessionFactory,transactionManager,transactionAdvice,org.springframework.aop.config.internalAutoProxyCreator,transactionPointcut,org.springframework.aop.support.DefaultBeanFactoryPointcutAdvisor#0,org.springframework.context.annotation.ConfigurationClassPostProcessor.importAwareProcessor]; root of factory hierarchy
+[INFO][2015-11-23 11:37:25,968][com.alibaba.druid.pool.DruidDataSource]{dataSource-1} closed
+[INFO][2015-11-23 11:40:58,289][org.springframework.beans.factory.xml.XmlBeanDefinitionReader]Loading XML bean definitions from class path resource [spring.xml]
+[INFO][2015-11-23 11:40:58,599][org.springframework.context.annotation.ClassPathBeanDefinitionScanner]JSR-250 'javax.annotation.ManagedBean' found and supported for component scanning
+[INFO][2015-11-23 11:40:58,602][org.springframework.context.annotation.ClassPathBeanDefinitionScanner]JSR-330 'javax.inject.Named' annotation found and supported for component scanning
+[INFO][2015-11-23 11:40:58,829][org.springframework.beans.factory.xml.XmlBeanDefinitionReader]Loading XML bean definitions from class path resource [spring-hibernate.xml]
+[INFO][2015-11-23 11:40:58,989][org.springframework.context.support.GenericApplicationContext]Refreshing org.springframework.context.support.GenericApplicationContext@2ef5e5e3: startup date [Mon Nov 23 11:40:58 CST 2015]; root of context hierarchy
+[INFO][2015-11-23 11:40:59,467][org.springframework.beans.factory.config.PropertyPlaceholderConfigurer]Loading properties file from class path resource [config.properties]
+[INFO][2015-11-23 11:40:59,484][org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor]JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+[INFO][2015-11-23 11:40:59,561][org.springframework.beans.factory.support.DefaultListableBeanFactory]Pre-instantiating singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@5906ebcb: defining beans [org.springframework.beans.factory.config.PropertyPlaceholderConfigurer#0,codeController,homeController,loginController,noticeController,problemController,solutionController,summaryController,userController,aCRecordDao,noticeDao,problemDao,solutionDao,userDao,loginService,noticeService,problemService,solutionService,userService,Hust,org.springframework.context.annotation.internalConfigurationAnnotationProcessor,org.springframework.context.annotation.internalAutowiredAnnotationProcessor,org.springframework.context.annotation.internalRequiredAnnotationProcessor,org.springframework.context.annotation.internalCommonAnnotationProcessor,org.springframework.context.annotation.internalPersistenceAnnotationProcessor,dataSource,sessionFactory,transactionManager,transactionAdvice,org.springframework.aop.config.internalAutoProxyCreator,transactionPointcut,org.springframework.aop.support.DefaultBeanFactoryPointcutAdvisor#0,org.springframework.context.annotation.ConfigurationClassPostProcessor.importAwareProcessor]; root of factory hierarchy
+[ERROR][2015-11-23 11:41:00,223][com.alibaba.druid.pool.DruidAbstractDataSource]maxIdle is deprecated
+[INFO][2015-11-23 11:41:00,377][com.alibaba.druid.pool.DruidDataSource]{dataSource-1} inited
+[INFO][2015-11-23 11:41:00,677][org.hibernate.annotations.common.Version]HCANN000001: Hibernate Commons Annotations {4.0.2.Final}
+[INFO][2015-11-23 11:41:00,695][org.hibernate.Version]HHH000412: Hibernate Core {4.2.5.Final}
+[INFO][2015-11-23 11:41:00,699][org.hibernate.cfg.Environment]HHH000206: hibernate.properties not found
+[INFO][2015-11-23 11:41:00,702][org.hibernate.cfg.Environment]HHH000021: Bytecode provider name : javassist
+[INFO][2015-11-23 11:41:01,254][org.hibernate.dialect.Dialect]HHH000400: Using dialect: org.hibernate.dialect.MySQLDialect
+[INFO][2015-11-23 11:41:01,424][org.springframework.beans.factory.support.DefaultListableBeanFactory]Destroying singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@5906ebcb: defining beans [org.springframework.beans.factory.config.PropertyPlaceholderConfigurer#0,codeController,homeController,loginController,noticeController,problemController,solutionController,summaryController,userController,aCRecordDao,noticeDao,problemDao,solutionDao,userDao,loginService,noticeService,problemService,solutionService,userService,Hust,org.springframework.context.annotation.internalConfigurationAnnotationProcessor,org.springframework.context.annotation.internalAutowiredAnnotationProcessor,org.springframework.context.annotation.internalRequiredAnnotationProcessor,org.springframework.context.annotation.internalCommonAnnotationProcessor,org.springframework.context.annotation.internalPersistenceAnnotationProcessor,dataSource,sessionFactory,transactionManager,transactionAdvice,org.springframework.aop.config.internalAutoProxyCreator,transactionPointcut,org.springframework.aop.support.DefaultBeanFactoryPointcutAdvisor#0,org.springframework.context.annotation.ConfigurationClassPostProcessor.importAwareProcessor]; root of factory hierarchy
+[INFO][2015-11-23 11:41:01,437][com.alibaba.druid.pool.DruidDataSource]{dataSource-1} closed
+[ERROR][2015-11-23 11:41:01,438][org.springframework.test.context.TestContextManager]Caught exception while allowing TestExecutionListener [org.springframework.test.context.web.ServletTestExecutionListener@7a560583] to prepare test instance [com.cquacmer.service.SolutionServiceTest@4d722ac9]
+java.lang.IllegalStateException: Failed to load ApplicationContext
+	at org.springframework.test.context.CacheAwareContextLoaderDelegate.loadContext(CacheAwareContextLoaderDelegate.java:99)
+	at org.springframework.test.context.TestContext.getApplicationContext(TestContext.java:122)
+	at org.springframework.test.context.web.ServletTestExecutionListener.setUpRequestContextIfNecessary(ServletTestExecutionListener.java:105)
+	at org.springframework.test.context.web.ServletTestExecutionListener.prepareTestInstance(ServletTestExecutionListener.java:74)
+	at org.springframework.test.context.TestContextManager.prepareTestInstance(TestContextManager.java:312)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.createTest(SpringJUnit4ClassRunner.java:211)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner$1.runReflectiveCall(SpringJUnit4ClassRunner.java:288)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.methodBlock(SpringJUnit4ClassRunner.java:284)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:231)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:88)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:238)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:63)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:236)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:53)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:229)
+	at org.springframework.test.context.junit4.statements.RunBeforeTestClassCallbacks.evaluate(RunBeforeTestClassCallbacks.java:61)
+	at org.springframework.test.context.junit4.statements.RunAfterTestClassCallbacks.evaluate(RunAfterTestClassCallbacks.java:71)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:309)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.run(SpringJUnit4ClassRunner.java:174)
+	at org.junit.runner.JUnitCore.run(JUnitCore.java:160)
+	at com.intellij.junit4.JUnit4IdeaTestRunner.startRunnerWithArgs(JUnit4IdeaTestRunner.java:78)
+	at com.intellij.rt.execution.junit.JUnitStarter.prepareStreamsAndStart(JUnitStarter.java:212)
+	at com.intellij.rt.execution.junit.JUnitStarter.main(JUnitStarter.java:68)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:497)
+	at com.intellij.rt.execution.application.AppMain.main(AppMain.java:140)
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'homeController': Injection of resource dependencies failed; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'noticeService': Injection of resource dependencies failed; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'noticeDao': Injection of resource dependencies failed; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'sessionFactory' defined in class path resource [spring-hibernate.xml]: Invocation of init method failed; nested exception is org.hibernate.MappingException: Could not determine type for: java.util.List, at table: problem, for columns: [org.hibernate.mapping.Column(solutions)]
+	at org.springframework.context.annotation.CommonAnnotationBeanPostProcessor.postProcessPropertyValues(CommonAnnotationBeanPostProcessor.java:306)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1116)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:519)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:458)
+	at org.springframework.beans.factory.support.AbstractBeanFactory$1.getObject(AbstractBeanFactory.java:295)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:223)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:292)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:194)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:628)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:932)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:479)
+	at org.springframework.test.context.support.AbstractGenericContextLoader.loadContext(AbstractGenericContextLoader.java:120)
+	at org.springframework.test.context.support.AbstractGenericContextLoader.loadContext(AbstractGenericContextLoader.java:60)
+	at org.springframework.test.context.support.AbstractDelegatingSmartContextLoader.delegateLoading(AbstractDelegatingSmartContextLoader.java:100)
+	at org.springframework.test.context.support.AbstractDelegatingSmartContextLoader.loadContext(AbstractDelegatingSmartContextLoader.java:248)
+	at org.springframework.test.context.CacheAwareContextLoaderDelegate.loadContextInternal(CacheAwareContextLoaderDelegate.java:64)
+	at org.springframework.test.context.CacheAwareContextLoaderDelegate.loadContext(CacheAwareContextLoaderDelegate.java:91)
+	... 28 more
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'noticeService': Injection of resource dependencies failed; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'noticeDao': Injection of resource dependencies failed; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'sessionFactory' defined in class path resource [spring-hibernate.xml]: Invocation of init method failed; nested exception is org.hibernate.MappingException: Could not determine type for: java.util.List, at table: problem, for columns: [org.hibernate.mapping.Column(solutions)]
+	at org.springframework.context.annotation.CommonAnnotationBeanPostProcessor.postProcessPropertyValues(CommonAnnotationBeanPostProcessor.java:306)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1116)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:519)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:458)
+	at org.springframework.beans.factory.support.AbstractBeanFactory$1.getObject(AbstractBeanFactory.java:295)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:223)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:292)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:198)
+	at org.springframework.context.annotation.CommonAnnotationBeanPostProcessor.autowireResource(CommonAnnotationBeanPostProcessor.java:442)
+	at org.springframework.context.annotation.CommonAnnotationBeanPostProcessor.getResource(CommonAnnotationBeanPostProcessor.java:416)
+	at org.springframework.context.annotation.CommonAnnotationBeanPostProcessor$ResourceElement.getResourceToInject(CommonAnnotationBeanPostProcessor.java:550)
+	at org.springframework.beans.factory.annotation.InjectionMetadata$InjectedElement.inject(InjectionMetadata.java:150)
+	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:87)
+	at org.springframework.context.annotation.CommonAnnotationBeanPostProcessor.postProcessPropertyValues(CommonAnnotationBeanPostProcessor.java:303)
+	... 44 more
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'noticeDao': Injection of resource dependencies failed; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'sessionFactory' defined in class path resource [spring-hibernate.xml]: Invocation of init method failed; nested exception is org.hibernate.MappingException: Could not determine type for: java.util.List, at table: problem, for columns: [org.hibernate.mapping.Column(solutions)]
+	at org.springframework.context.annotation.CommonAnnotationBeanPostProcessor.postProcessPropertyValues(CommonAnnotationBeanPostProcessor.java:306)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1116)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:519)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:458)
+	at org.springframework.beans.factory.support.AbstractBeanFactory$1.getObject(AbstractBeanFactory.java:295)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:223)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:292)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:198)
+	at org.springframework.context.annotation.CommonAnnotationBeanPostProcessor.autowireResource(CommonAnnotationBeanPostProcessor.java:442)
+	at org.springframework.context.annotation.CommonAnnotationBeanPostProcessor.getResource(CommonAnnotationBeanPostProcessor.java:416)
+	at org.springframework.context.annotation.CommonAnnotationBeanPostProcessor$ResourceElement.getResourceToInject(CommonAnnotationBeanPostProcessor.java:550)
+	at org.springframework.beans.factory.annotation.InjectionMetadata$InjectedElement.inject(InjectionMetadata.java:150)
+	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:87)
+	at org.springframework.context.annotation.CommonAnnotationBeanPostProcessor.postProcessPropertyValues(CommonAnnotationBeanPostProcessor.java:303)
+	... 57 more
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'sessionFactory' defined in class path resource [spring-hibernate.xml]: Invocation of init method failed; nested exception is org.hibernate.MappingException: Could not determine type for: java.util.List, at table: problem, for columns: [org.hibernate.mapping.Column(solutions)]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1482)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:521)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:458)
+	at org.springframework.beans.factory.support.AbstractBeanFactory$1.getObject(AbstractBeanFactory.java:295)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:223)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:292)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:198)
+	at org.springframework.context.annotation.CommonAnnotationBeanPostProcessor.autowireResource(CommonAnnotationBeanPostProcessor.java:442)
+	at org.springframework.context.annotation.CommonAnnotationBeanPostProcessor.getResource(CommonAnnotationBeanPostProcessor.java:416)
+	at org.springframework.context.annotation.CommonAnnotationBeanPostProcessor$ResourceElement.getResourceToInject(CommonAnnotationBeanPostProcessor.java:550)
+	at org.springframework.beans.factory.annotation.InjectionMetadata$InjectedElement.inject(InjectionMetadata.java:159)
+	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:87)
+	at org.springframework.context.annotation.CommonAnnotationBeanPostProcessor.postProcessPropertyValues(CommonAnnotationBeanPostProcessor.java:303)
+	... 70 more
+Caused by: org.hibernate.MappingException: Could not determine type for: java.util.List, at table: problem, for columns: [org.hibernate.mapping.Column(solutions)]
+	at org.hibernate.mapping.SimpleValue.getType(SimpleValue.java:314)
+	at org.hibernate.mapping.SimpleValue.isValid(SimpleValue.java:292)
+	at org.hibernate.mapping.Property.isValid(Property.java:239)
+	at org.hibernate.mapping.PersistentClass.validate(PersistentClass.java:483)
+	at org.hibernate.mapping.RootClass.validate(RootClass.java:270)
+	at org.hibernate.cfg.Configuration.validate(Configuration.java:1324)
+	at org.hibernate.cfg.Configuration.buildSessionFactory(Configuration.java:1782)
+	at org.hibernate.cfg.Configuration.buildSessionFactory(Configuration.java:1861)
+	at org.springframework.orm.hibernate4.LocalSessionFactoryBuilder.buildSessionFactory(LocalSessionFactoryBuilder.java:247)
+	at org.springframework.orm.hibernate4.LocalSessionFactoryBean.buildSessionFactory(LocalSessionFactoryBean.java:373)
+	at org.springframework.orm.hibernate4.LocalSessionFactoryBean.afterPropertiesSet(LocalSessionFactoryBean.java:358)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1541)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1479)
+	... 82 more
+[INFO][2015-11-23 11:44:59,007][org.springframework.beans.factory.xml.XmlBeanDefinitionReader]Loading XML bean definitions from class path resource [spring.xml]
+[INFO][2015-11-23 11:44:59,322][org.springframework.context.annotation.ClassPathBeanDefinitionScanner]JSR-250 'javax.annotation.ManagedBean' found and supported for component scanning
+[INFO][2015-11-23 11:44:59,330][org.springframework.context.annotation.ClassPathBeanDefinitionScanner]JSR-330 'javax.inject.Named' annotation found and supported for component scanning
+[INFO][2015-11-23 11:44:59,603][org.springframework.beans.factory.xml.XmlBeanDefinitionReader]Loading XML bean definitions from class path resource [spring-hibernate.xml]
+[INFO][2015-11-23 11:44:59,771][org.springframework.context.support.GenericApplicationContext]Refreshing org.springframework.context.support.GenericApplicationContext@2ef5e5e3: startup date [Mon Nov 23 11:44:59 CST 2015]; root of context hierarchy
+[INFO][2015-11-23 11:45:00,035][org.springframework.beans.factory.config.PropertyPlaceholderConfigurer]Loading properties file from class path resource [config.properties]
+[INFO][2015-11-23 11:45:00,048][org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor]JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+[INFO][2015-11-23 11:45:00,102][org.springframework.beans.factory.support.DefaultListableBeanFactory]Pre-instantiating singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@5906ebcb: defining beans [org.springframework.beans.factory.config.PropertyPlaceholderConfigurer#0,codeController,homeController,loginController,noticeController,problemController,solutionController,summaryController,userController,aCRecordDao,noticeDao,problemDao,solutionDao,userDao,loginService,noticeService,problemService,solutionService,userService,Hust,org.springframework.context.annotation.internalConfigurationAnnotationProcessor,org.springframework.context.annotation.internalAutowiredAnnotationProcessor,org.springframework.context.annotation.internalRequiredAnnotationProcessor,org.springframework.context.annotation.internalCommonAnnotationProcessor,org.springframework.context.annotation.internalPersistenceAnnotationProcessor,dataSource,sessionFactory,transactionManager,transactionAdvice,org.springframework.aop.config.internalAutoProxyCreator,transactionPointcut,org.springframework.aop.support.DefaultBeanFactoryPointcutAdvisor#0,org.springframework.context.annotation.ConfigurationClassPostProcessor.importAwareProcessor]; root of factory hierarchy
+[ERROR][2015-11-23 11:45:00,930][com.alibaba.druid.pool.DruidAbstractDataSource]maxIdle is deprecated
+[INFO][2015-11-23 11:45:01,167][com.alibaba.druid.pool.DruidDataSource]{dataSource-1} inited
+[INFO][2015-11-23 11:45:01,603][org.hibernate.annotations.common.Version]HCANN000001: Hibernate Commons Annotations {4.0.2.Final}
+[INFO][2015-11-23 11:45:01,611][org.hibernate.Version]HHH000412: Hibernate Core {4.2.5.Final}
+[INFO][2015-11-23 11:45:01,614][org.hibernate.cfg.Environment]HHH000206: hibernate.properties not found
+[INFO][2015-11-23 11:45:01,616][org.hibernate.cfg.Environment]HHH000021: Bytecode provider name : javassist
+[INFO][2015-11-23 11:45:02,170][org.hibernate.dialect.Dialect]HHH000400: Using dialect: org.hibernate.dialect.MySQLDialect
+[INFO][2015-11-23 11:45:02,360][org.hibernate.engine.transaction.internal.TransactionFactoryInitiator]HHH000399: Using default transaction strategy (direct JDBC transactions)
+[INFO][2015-11-23 11:45:02,364][org.hibernate.hql.internal.ast.ASTQueryTranslatorFactory]HHH000397: Using ASTQueryTranslatorFactory
+[INFO][2015-11-23 11:45:02,790][org.hibernate.tool.hbm2ddl.SchemaUpdate]HHH000228: Running hbm2ddl schema update
+[INFO][2015-11-23 11:45:02,791][org.hibernate.tool.hbm2ddl.SchemaUpdate]HHH000102: Fetching database metadata
+[INFO][2015-11-23 11:45:02,797][org.hibernate.tool.hbm2ddl.SchemaUpdate]HHH000396: Updating schema
+[INFO][2015-11-23 11:45:02,835][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000261: Table found: cquacm.acrecord
+[INFO][2015-11-23 11:45:02,836][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000037: Columns: [pid, id, source, username]
+[INFO][2015-11-23 11:45:02,837][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000108: Foreign keys: []
+[INFO][2015-11-23 11:45:02,837][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000126: Indexes: [primary]
+[INFO][2015-11-23 11:45:02,854][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000261: Table found: cquacm.hustaccode
+[INFO][2015-11-23 11:45:02,855][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000037: Columns: [memsize, code, submit, language, pid, id, time, codelength, username]
+[INFO][2015-11-23 11:45:02,855][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000108: Foreign keys: []
+[INFO][2015-11-23 11:45:02,855][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000126: Indexes: [primary]
+[INFO][2015-11-23 11:45:02,870][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000261: Table found: cquacm.notice
+[INFO][2015-11-23 11:45:02,871][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000037: Columns: [id, time, title, content, username]
+[INFO][2015-11-23 11:45:02,871][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000108: Foreign keys: []
+[INFO][2015-11-23 11:45:02,872][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000126: Indexes: [primary]
+[INFO][2015-11-23 11:45:02,888][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000261: Table found: cquacm.problem
+[INFO][2015-11-23 11:45:02,888][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000037: Columns: [ojid, level, ojname, id, tags]
+[INFO][2015-11-23 11:45:02,889][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000108: Foreign keys: []
+[INFO][2015-11-23 11:45:02,889][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000126: Indexes: [primary]
+[INFO][2015-11-23 11:45:02,910][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000261: Table found: cquacm.solution
+[INFO][2015-11-23 11:45:02,910][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000037: Columns: [code, solution, submit, pid, id, username]
+[INFO][2015-11-23 11:45:02,911][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000108: Foreign keys: [fk_8tvulqof7nk1vkm7oenb55130]
+[INFO][2015-11-23 11:45:02,911][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000126: Indexes: [fk_8tvulqof7nk1vkm7oenb55130, primary]
+[INFO][2015-11-23 11:45:02,931][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000261: Table found: cquacm.user
+[INFO][2015-11-23 11:45:02,931][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000037: Columns: [fzu, uva, thirt, campus, codeforces, poj, telephone, blog, password, zoj, major, idcard, schoolid, name, hdu, id, email, hust_name, username]
+[INFO][2015-11-23 11:45:02,932][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000108: Foreign keys: []
+[INFO][2015-11-23 11:45:02,933][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000126: Indexes: [primary]
+[INFO][2015-11-23 11:45:02,935][org.hibernate.tool.hbm2ddl.SchemaUpdate]HHH000232: Schema update complete
+[INFO][2015-11-23 11:45:03,186][org.springframework.orm.hibernate4.HibernateTransactionManager]Using DataSource [{
+	CreateTime:"2015-11-23 11:45:00",
+	ActiveCount:0,
+	PoolingCount:1,
+	CreateCount:1,
+	DestroyCount:0,
+	CloseCount:2,
+	ConnectCount:2,
+	Connections:[
+		{ID:832432849, ConnectTime:"2015-11-23 11:45:02", UseCount:2, LastActiveTime:"2015-11-23 11:45:02"}
+	]
+}] of Hibernate SessionFactory for HibernateTransactionManager
+[INFO][2015-11-23 11:45:03,369][org.springframework.test.context.transaction.TransactionalTestExecutionListener]Began transaction (1): transaction manager [org.springframework.orm.hibernate4.HibernateTransactionManager@7e0aadd0]; rollback [false]
+[WARN][2015-11-23 11:45:03,503][org.hibernate.hql.internal.ast.HqlSqlWalker][DEPRECATION] Encountered positional parameter near line 1, column 42.  Positional parameter are considered deprecated; use named parameters or JPA-style positional parameters instead.
+[WARN][2015-11-23 11:45:03,808][org.hibernate.hql.internal.ast.HqlSqlWalker][DEPRECATION] Encountered positional parameter near line 1, column 44.  Positional parameter are considered deprecated; use named parameters or JPA-style positional parameters instead.
+[INFO][2015-11-23 11:45:03,866][org.springframework.test.context.transaction.TransactionalTestExecutionListener]Committed transaction after test execution for test context [TestContext@1ad926d3 testClass = SolutionServiceTest, testInstance = com.cquacmer.service.SolutionServiceTest@3a43d133, testMethod = query@SolutionServiceTest, testException = [null], mergedContextConfiguration = [MergedContextConfiguration@39ce27f2 testClass = SolutionServiceTest, locations = '{classpath:spring.xml, classpath:spring-hibernate.xml}', classes = '{}', contextInitializerClasses = '[]', activeProfiles = '{}', contextLoader = 'org.springframework.test.context.support.DelegatingSmartContextLoader', parent = [null]]]
+[INFO][2015-11-23 11:45:03,875][org.springframework.context.support.GenericApplicationContext]Closing org.springframework.context.support.GenericApplicationContext@2ef5e5e3: startup date [Mon Nov 23 11:44:59 CST 2015]; root of context hierarchy
+[INFO][2015-11-23 11:45:03,877][org.springframework.beans.factory.support.DefaultListableBeanFactory]Destroying singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@5906ebcb: defining beans [org.springframework.beans.factory.config.PropertyPlaceholderConfigurer#0,codeController,homeController,loginController,noticeController,problemController,solutionController,summaryController,userController,aCRecordDao,noticeDao,problemDao,solutionDao,userDao,loginService,noticeService,problemService,solutionService,userService,Hust,org.springframework.context.annotation.internalConfigurationAnnotationProcessor,org.springframework.context.annotation.internalAutowiredAnnotationProcessor,org.springframework.context.annotation.internalRequiredAnnotationProcessor,org.springframework.context.annotation.internalCommonAnnotationProcessor,org.springframework.context.annotation.internalPersistenceAnnotationProcessor,dataSource,sessionFactory,transactionManager,transactionAdvice,org.springframework.aop.config.internalAutoProxyCreator,transactionPointcut,org.springframework.aop.support.DefaultBeanFactoryPointcutAdvisor#0,org.springframework.context.annotation.ConfigurationClassPostProcessor.importAwareProcessor]; root of factory hierarchy
+[INFO][2015-11-23 11:45:03,903][com.alibaba.druid.pool.DruidDataSource]{dataSource-1} closed
+[INFO][2015-11-23 11:49:16,160][org.springframework.beans.factory.xml.XmlBeanDefinitionReader]Loading XML bean definitions from class path resource [spring.xml]
+[INFO][2015-11-23 11:49:16,420][org.springframework.context.annotation.ClassPathBeanDefinitionScanner]JSR-250 'javax.annotation.ManagedBean' found and supported for component scanning
+[INFO][2015-11-23 11:49:16,424][org.springframework.context.annotation.ClassPathBeanDefinitionScanner]JSR-330 'javax.inject.Named' annotation found and supported for component scanning
+[INFO][2015-11-23 11:49:16,789][org.springframework.beans.factory.xml.XmlBeanDefinitionReader]Loading XML bean definitions from class path resource [spring-hibernate.xml]
+[INFO][2015-11-23 11:49:17,066][org.springframework.context.support.GenericApplicationContext]Refreshing org.springframework.context.support.GenericApplicationContext@2ef5e5e3: startup date [Mon Nov 23 11:49:17 CST 2015]; root of context hierarchy
+[INFO][2015-11-23 11:49:17,484][org.springframework.beans.factory.config.PropertyPlaceholderConfigurer]Loading properties file from class path resource [config.properties]
+[INFO][2015-11-23 11:49:17,504][org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor]JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+[INFO][2015-11-23 11:49:17,624][org.springframework.beans.factory.support.DefaultListableBeanFactory]Pre-instantiating singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@5906ebcb: defining beans [org.springframework.beans.factory.config.PropertyPlaceholderConfigurer#0,codeController,homeController,loginController,noticeController,problemController,solutionController,summaryController,userController,aCRecordDao,noticeDao,problemDao,solutionDao,userDao,loginService,noticeService,problemService,solutionService,userService,Hust,org.springframework.context.annotation.internalConfigurationAnnotationProcessor,org.springframework.context.annotation.internalAutowiredAnnotationProcessor,org.springframework.context.annotation.internalRequiredAnnotationProcessor,org.springframework.context.annotation.internalCommonAnnotationProcessor,org.springframework.context.annotation.internalPersistenceAnnotationProcessor,dataSource,sessionFactory,transactionManager,transactionAdvice,org.springframework.aop.config.internalAutoProxyCreator,transactionPointcut,org.springframework.aop.support.DefaultBeanFactoryPointcutAdvisor#0,org.springframework.context.annotation.ConfigurationClassPostProcessor.importAwareProcessor]; root of factory hierarchy
+[ERROR][2015-11-23 11:49:18,222][com.alibaba.druid.pool.DruidAbstractDataSource]maxIdle is deprecated
+[INFO][2015-11-23 11:49:18,322][com.alibaba.druid.pool.DruidDataSource]{dataSource-1} inited
+[INFO][2015-11-23 11:49:18,629][org.hibernate.annotations.common.Version]HCANN000001: Hibernate Commons Annotations {4.0.2.Final}
+[INFO][2015-11-23 11:49:18,648][org.hibernate.Version]HHH000412: Hibernate Core {4.2.5.Final}
+[INFO][2015-11-23 11:49:18,651][org.hibernate.cfg.Environment]HHH000206: hibernate.properties not found
+[INFO][2015-11-23 11:49:18,656][org.hibernate.cfg.Environment]HHH000021: Bytecode provider name : javassist
+[INFO][2015-11-23 11:49:19,253][org.hibernate.dialect.Dialect]HHH000400: Using dialect: org.hibernate.dialect.MySQLDialect
+[INFO][2015-11-23 11:49:19,441][org.hibernate.engine.transaction.internal.TransactionFactoryInitiator]HHH000399: Using default transaction strategy (direct JDBC transactions)
+[INFO][2015-11-23 11:49:19,447][org.hibernate.hql.internal.ast.ASTQueryTranslatorFactory]HHH000397: Using ASTQueryTranslatorFactory
+[INFO][2015-11-23 11:49:19,890][org.hibernate.tool.hbm2ddl.SchemaUpdate]HHH000228: Running hbm2ddl schema update
+[INFO][2015-11-23 11:49:19,891][org.hibernate.tool.hbm2ddl.SchemaUpdate]HHH000102: Fetching database metadata
+[INFO][2015-11-23 11:49:19,900][org.hibernate.tool.hbm2ddl.SchemaUpdate]HHH000396: Updating schema
+[INFO][2015-11-23 11:49:19,947][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000261: Table found: cquacm.acrecord
+[INFO][2015-11-23 11:49:19,948][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000037: Columns: [pid, id, source, username]
+[INFO][2015-11-23 11:49:19,948][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000108: Foreign keys: []
+[INFO][2015-11-23 11:49:19,949][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000126: Indexes: [primary]
+[INFO][2015-11-23 11:49:19,966][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000261: Table found: cquacm.hustaccode
+[INFO][2015-11-23 11:49:19,967][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000037: Columns: [memsize, code, submit, language, pid, id, time, codelength, username]
+[INFO][2015-11-23 11:49:19,967][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000108: Foreign keys: []
+[INFO][2015-11-23 11:49:19,968][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000126: Indexes: [primary]
+[INFO][2015-11-23 11:49:19,991][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000261: Table found: cquacm.notice
+[INFO][2015-11-23 11:49:19,992][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000037: Columns: [id, time, title, content, username]
+[INFO][2015-11-23 11:49:19,992][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000108: Foreign keys: []
+[INFO][2015-11-23 11:49:19,993][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000126: Indexes: [primary]
+[INFO][2015-11-23 11:49:20,014][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000261: Table found: cquacm.problem
+[INFO][2015-11-23 11:49:20,014][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000037: Columns: [ojid, level, ojname, id, tags]
+[INFO][2015-11-23 11:49:20,015][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000108: Foreign keys: []
+[INFO][2015-11-23 11:49:20,015][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000126: Indexes: [primary]
+[INFO][2015-11-23 11:49:20,036][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000261: Table found: cquacm.solution
+[INFO][2015-11-23 11:49:20,036][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000037: Columns: [code, solution, submit, pid, id, username]
+[INFO][2015-11-23 11:49:20,037][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000108: Foreign keys: [fk_8tvulqof7nk1vkm7oenb55130]
+[INFO][2015-11-23 11:49:20,037][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000126: Indexes: [fk_8tvulqof7nk1vkm7oenb55130, primary]
+[INFO][2015-11-23 11:49:20,055][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000261: Table found: cquacm.user
+[INFO][2015-11-23 11:49:20,056][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000037: Columns: [fzu, uva, thirt, campus, codeforces, poj, telephone, blog, password, zoj, major, idcard, schoolid, name, hdu, id, email, hust_name, username]
+[INFO][2015-11-23 11:49:20,056][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000108: Foreign keys: []
+[INFO][2015-11-23 11:49:20,057][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000126: Indexes: [primary]
+[INFO][2015-11-23 11:49:20,058][org.hibernate.tool.hbm2ddl.SchemaUpdate]HHH000232: Schema update complete
+[INFO][2015-11-23 11:49:20,386][org.springframework.orm.hibernate4.HibernateTransactionManager]Using DataSource [{
+	CreateTime:"2015-11-23 11:49:18",
+	ActiveCount:0,
+	PoolingCount:1,
+	CreateCount:1,
+	DestroyCount:0,
+	CloseCount:2,
+	ConnectCount:2,
+	Connections:[
+		{ID:832432849, ConnectTime:"2015-11-23 11:49:19", UseCount:2, LastActiveTime:"2015-11-23 11:49:20"}
+	]
+}] of Hibernate SessionFactory for HibernateTransactionManager
+[INFO][2015-11-23 11:49:20,559][org.springframework.test.context.transaction.TransactionalTestExecutionListener]Began transaction (1): transaction manager [org.springframework.orm.hibernate4.HibernateTransactionManager@7e0aadd0]; rollback [false]
+[WARN][2015-11-23 11:49:20,759][org.hibernate.hql.internal.ast.HqlSqlWalker][DEPRECATION] Encountered positional parameter near line 1, column 42.  Positional parameter are considered deprecated; use named parameters or JPA-style positional parameters instead.
+[WARN][2015-11-23 11:49:21,188][org.hibernate.hql.internal.ast.HqlSqlWalker][DEPRECATION] Encountered positional parameter near line 1, column 44.  Positional parameter are considered deprecated; use named parameters or JPA-style positional parameters instead.
+[WARN][2015-11-23 11:49:21,249][org.hibernate.engine.jdbc.spi.SqlExceptionHelper]SQL Error: 1048, SQLState: 23000
+[ERROR][2015-11-23 11:49:21,250][org.hibernate.engine.jdbc.spi.SqlExceptionHelper]Column 'pid' cannot be null
+[WARN][2015-11-23 11:49:21,265][org.springframework.test.context.TestContextManager]Caught exception while allowing TestExecutionListener [org.springframework.test.context.transaction.TransactionalTestExecutionListener@7f9e1534] to process 'after' execution for test: method [public void com.cquacmer.service.SolutionServiceTest.query()], instance [com.cquacmer.service.SolutionServiceTest@138a7441], exception [null]
+org.springframework.dao.DataIntegrityViolationException: could not execute statement; SQL [n/a]; constraint [null]; nested exception is org.hibernate.exception.ConstraintViolationException: could not execute statement
+	at org.springframework.orm.hibernate4.SessionFactoryUtils.convertHibernateAccessException(SessionFactoryUtils.java:138)
+	at org.springframework.orm.hibernate4.HibernateTransactionManager.convertHibernateAccessException(HibernateTransactionManager.java:680)
+	at org.springframework.orm.hibernate4.HibernateTransactionManager.doCommit(HibernateTransactionManager.java:562)
+	at org.springframework.transaction.support.AbstractPlatformTransactionManager.processCommit(AbstractPlatformTransactionManager.java:755)
+	at org.springframework.transaction.support.AbstractPlatformTransactionManager.commit(AbstractPlatformTransactionManager.java:724)
+	at org.springframework.test.context.transaction.TransactionalTestExecutionListener$TransactionContext.endTransaction(TransactionalTestExecutionListener.java:591)
+	at org.springframework.test.context.transaction.TransactionalTestExecutionListener.endTransaction(TransactionalTestExecutionListener.java:297)
+	at org.springframework.test.context.transaction.TransactionalTestExecutionListener.afterTestMethod(TransactionalTestExecutionListener.java:192)
+	at org.springframework.test.context.TestContextManager.afterTestMethod(TestContextManager.java:395)
+	at org.springframework.test.context.junit4.statements.RunAfterTestMethodCallbacks.evaluate(RunAfterTestMethodCallbacks.java:91)
+	at org.springframework.test.context.junit4.statements.SpringRepeat.evaluate(SpringRepeat.java:72)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:231)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:88)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:238)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:63)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:236)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:53)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:229)
+	at org.springframework.test.context.junit4.statements.RunBeforeTestClassCallbacks.evaluate(RunBeforeTestClassCallbacks.java:61)
+	at org.springframework.test.context.junit4.statements.RunAfterTestClassCallbacks.evaluate(RunAfterTestClassCallbacks.java:71)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:309)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.run(SpringJUnit4ClassRunner.java:174)
+	at org.junit.runner.JUnitCore.run(JUnitCore.java:160)
+	at com.intellij.junit4.JUnit4IdeaTestRunner.startRunnerWithArgs(JUnit4IdeaTestRunner.java:78)
+	at com.intellij.rt.execution.junit.JUnitStarter.prepareStreamsAndStart(JUnitStarter.java:212)
+	at com.intellij.rt.execution.junit.JUnitStarter.main(JUnitStarter.java:68)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:497)
+	at com.intellij.rt.execution.application.AppMain.main(AppMain.java:140)
+Caused by: org.hibernate.exception.ConstraintViolationException: could not execute statement
+	at org.hibernate.exception.internal.SQLExceptionTypeDelegate.convert(SQLExceptionTypeDelegate.java:74)
+	at org.hibernate.exception.internal.StandardSQLExceptionConverter.convert(StandardSQLExceptionConverter.java:49)
+	at org.hibernate.engine.jdbc.spi.SqlExceptionHelper.convert(SqlExceptionHelper.java:125)
+	at org.hibernate.engine.jdbc.spi.SqlExceptionHelper.convert(SqlExceptionHelper.java:110)
+	at org.hibernate.engine.jdbc.internal.ResultSetReturnImpl.executeUpdate(ResultSetReturnImpl.java:136)
+	at org.hibernate.id.IdentityGenerator$GetGeneratedKeysDelegate.executeAndExtract(IdentityGenerator.java:96)
+	at org.hibernate.id.insert.AbstractReturningDelegate.performInsert(AbstractReturningDelegate.java:58)
+	at org.hibernate.persister.entity.AbstractEntityPersister.insert(AbstractEntityPersister.java:2975)
+	at org.hibernate.persister.entity.AbstractEntityPersister.insert(AbstractEntityPersister.java:3487)
+	at org.hibernate.action.internal.EntityIdentityInsertAction.execute(EntityIdentityInsertAction.java:81)
+	at org.hibernate.engine.spi.ActionQueue.execute(ActionQueue.java:377)
+	at org.hibernate.engine.spi.ActionQueue.addResolvedEntityInsertAction(ActionQueue.java:214)
+	at org.hibernate.engine.spi.ActionQueue.addInsertAction(ActionQueue.java:194)
+	at org.hibernate.engine.spi.ActionQueue.addAction(ActionQueue.java:178)
+	at org.hibernate.event.internal.AbstractSaveEventListener.addInsertAction(AbstractSaveEventListener.java:321)
+	at org.hibernate.event.internal.AbstractSaveEventListener.performSaveOrReplicate(AbstractSaveEventListener.java:286)
+	at org.hibernate.event.internal.AbstractSaveEventListener.performSave(AbstractSaveEventListener.java:192)
+	at org.hibernate.event.internal.AbstractSaveEventListener.saveWithGeneratedId(AbstractSaveEventListener.java:125)
+	at org.hibernate.event.internal.DefaultSaveOrUpdateEventListener.saveWithGeneratedOrRequestedId(DefaultSaveOrUpdateEventListener.java:206)
+	at org.hibernate.event.internal.DefaultSaveOrUpdateEventListener.entityIsTransient(DefaultSaveOrUpdateEventListener.java:191)
+	at org.hibernate.event.internal.DefaultSaveOrUpdateEventListener.performSaveOrUpdate(DefaultSaveOrUpdateEventListener.java:114)
+	at org.hibernate.event.internal.DefaultSaveOrUpdateEventListener.onSaveOrUpdate(DefaultSaveOrUpdateEventListener.java:90)
+	at org.hibernate.internal.SessionImpl.fireSaveOrUpdate(SessionImpl.java:735)
+	at org.hibernate.internal.SessionImpl.saveOrUpdate(SessionImpl.java:727)
+	at org.hibernate.engine.spi.CascadingAction$5.cascade(CascadingAction.java:258)
+	at org.hibernate.engine.internal.Cascade.cascadeToOne(Cascade.java:388)
+	at org.hibernate.engine.internal.Cascade.cascadeAssociation(Cascade.java:331)
+	at org.hibernate.engine.internal.Cascade.cascadeProperty(Cascade.java:209)
+	at org.hibernate.engine.internal.Cascade.cascadeCollectionElements(Cascade.java:418)
+	at org.hibernate.engine.internal.Cascade.cascadeCollection(Cascade.java:358)
+	at org.hibernate.engine.internal.Cascade.cascadeAssociation(Cascade.java:334)
+	at org.hibernate.engine.internal.Cascade.cascadeProperty(Cascade.java:209)
+	at org.hibernate.engine.internal.Cascade.cascade(Cascade.java:166)
+	at org.hibernate.event.internal.AbstractFlushingEventListener.cascadeOnFlush(AbstractFlushingEventListener.java:162)
+	at org.hibernate.event.internal.AbstractFlushingEventListener.prepareEntityFlushes(AbstractFlushingEventListener.java:153)
+	at org.hibernate.event.internal.AbstractFlushingEventListener.flushEverythingToExecutions(AbstractFlushingEventListener.java:89)
+	at org.hibernate.event.internal.DefaultFlushEventListener.onFlush(DefaultFlushEventListener.java:51)
+	at org.hibernate.internal.SessionImpl.flush(SessionImpl.java:1234)
+	at org.hibernate.internal.SessionImpl.managedFlush(SessionImpl.java:404)
+	at org.hibernate.engine.transaction.internal.jdbc.JdbcTransaction.beforeTransactionCommit(JdbcTransaction.java:101)
+	at org.hibernate.engine.transaction.spi.AbstractTransactionImpl.commit(AbstractTransactionImpl.java:175)
+	at org.springframework.orm.hibernate4.HibernateTransactionManager.doCommit(HibernateTransactionManager.java:554)
+	... 28 more
+Caused by: com.mysql.jdbc.exceptions.jdbc4.MySQLIntegrityConstraintViolationException: Column 'pid' cannot be null
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:422)
+	at com.mysql.jdbc.Util.handleNewInstance(Util.java:411)
+	at com.mysql.jdbc.Util.getInstance(Util.java:386)
+	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:1041)
+	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:4237)
+	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:4169)
+	at com.mysql.jdbc.MysqlIO.sendCommand(MysqlIO.java:2617)
+	at com.mysql.jdbc.MysqlIO.sqlQueryDirect(MysqlIO.java:2778)
+	at com.mysql.jdbc.ConnectionImpl.execSQL(ConnectionImpl.java:2834)
+	at com.mysql.jdbc.PreparedStatement.executeInternal(PreparedStatement.java:2156)
+	at com.mysql.jdbc.PreparedStatement.executeUpdate(PreparedStatement.java:2441)
+	at com.mysql.jdbc.PreparedStatement.executeUpdate(PreparedStatement.java:2366)
+	at com.mysql.jdbc.PreparedStatement.executeUpdate(PreparedStatement.java:2350)
+	at com.alibaba.druid.filter.FilterChainImpl.preparedStatement_executeUpdate(FilterChainImpl.java:2723)
+	at com.alibaba.druid.filter.FilterAdapter.preparedStatement_executeUpdate(FilterAdapter.java:1070)
+	at com.alibaba.druid.filter.FilterEventAdapter.preparedStatement_executeUpdate(FilterEventAdapter.java:491)
+	at com.alibaba.druid.filter.FilterChainImpl.preparedStatement_executeUpdate(FilterChainImpl.java:2721)
+	at com.alibaba.druid.proxy.jdbc.PreparedStatementProxyImpl.executeUpdate(PreparedStatementProxyImpl.java:145)
+	at com.alibaba.druid.pool.DruidPooledPreparedStatement.executeUpdate(DruidPooledPreparedStatement.java:253)
+	at org.hibernate.engine.jdbc.internal.ResultSetReturnImpl.executeUpdate(ResultSetReturnImpl.java:133)
+	... 65 more
+[INFO][2015-11-23 11:49:21,328][org.springframework.context.support.GenericApplicationContext]Closing org.springframework.context.support.GenericApplicationContext@2ef5e5e3: startup date [Mon Nov 23 11:49:17 CST 2015]; root of context hierarchy
+[INFO][2015-11-23 11:49:21,340][org.springframework.beans.factory.support.DefaultListableBeanFactory]Destroying singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@5906ebcb: defining beans [org.springframework.beans.factory.config.PropertyPlaceholderConfigurer#0,codeController,homeController,loginController,noticeController,problemController,solutionController,summaryController,userController,aCRecordDao,noticeDao,problemDao,solutionDao,userDao,loginService,noticeService,problemService,solutionService,userService,Hust,org.springframework.context.annotation.internalConfigurationAnnotationProcessor,org.springframework.context.annotation.internalAutowiredAnnotationProcessor,org.springframework.context.annotation.internalRequiredAnnotationProcessor,org.springframework.context.annotation.internalCommonAnnotationProcessor,org.springframework.context.annotation.internalPersistenceAnnotationProcessor,dataSource,sessionFactory,transactionManager,transactionAdvice,org.springframework.aop.config.internalAutoProxyCreator,transactionPointcut,org.springframework.aop.support.DefaultBeanFactoryPointcutAdvisor#0,org.springframework.context.annotation.ConfigurationClassPostProcessor.importAwareProcessor]; root of factory hierarchy
+[INFO][2015-11-23 11:49:21,357][com.alibaba.druid.pool.DruidDataSource]{dataSource-1} closed
+[INFO][2015-11-23 11:49:49,029][org.springframework.beans.factory.xml.XmlBeanDefinitionReader]Loading XML bean definitions from class path resource [spring.xml]
+[INFO][2015-11-23 11:49:49,328][org.springframework.context.annotation.ClassPathBeanDefinitionScanner]JSR-250 'javax.annotation.ManagedBean' found and supported for component scanning
+[INFO][2015-11-23 11:49:49,332][org.springframework.context.annotation.ClassPathBeanDefinitionScanner]JSR-330 'javax.inject.Named' annotation found and supported for component scanning
+[INFO][2015-11-23 11:49:49,565][org.springframework.beans.factory.xml.XmlBeanDefinitionReader]Loading XML bean definitions from class path resource [spring-hibernate.xml]
+[INFO][2015-11-23 11:49:49,717][org.springframework.context.support.GenericApplicationContext]Refreshing org.springframework.context.support.GenericApplicationContext@2ef5e5e3: startup date [Mon Nov 23 11:49:49 CST 2015]; root of context hierarchy
+[INFO][2015-11-23 11:49:50,266][org.springframework.beans.factory.config.PropertyPlaceholderConfigurer]Loading properties file from class path resource [config.properties]
+[INFO][2015-11-23 11:49:50,279][org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor]JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+[INFO][2015-11-23 11:49:50,338][org.springframework.beans.factory.support.DefaultListableBeanFactory]Pre-instantiating singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@5906ebcb: defining beans [org.springframework.beans.factory.config.PropertyPlaceholderConfigurer#0,codeController,homeController,loginController,noticeController,problemController,solutionController,summaryController,userController,aCRecordDao,noticeDao,problemDao,solutionDao,userDao,loginService,noticeService,problemService,solutionService,userService,Hust,org.springframework.context.annotation.internalConfigurationAnnotationProcessor,org.springframework.context.annotation.internalAutowiredAnnotationProcessor,org.springframework.context.annotation.internalRequiredAnnotationProcessor,org.springframework.context.annotation.internalCommonAnnotationProcessor,org.springframework.context.annotation.internalPersistenceAnnotationProcessor,dataSource,sessionFactory,transactionManager,transactionAdvice,org.springframework.aop.config.internalAutoProxyCreator,transactionPointcut,org.springframework.aop.support.DefaultBeanFactoryPointcutAdvisor#0,org.springframework.context.annotation.ConfigurationClassPostProcessor.importAwareProcessor]; root of factory hierarchy
+[ERROR][2015-11-23 11:49:51,016][com.alibaba.druid.pool.DruidAbstractDataSource]maxIdle is deprecated
+[INFO][2015-11-23 11:49:51,277][com.alibaba.druid.pool.DruidDataSource]{dataSource-1} inited
+[INFO][2015-11-23 11:49:51,589][org.hibernate.annotations.common.Version]HCANN000001: Hibernate Commons Annotations {4.0.2.Final}
+[INFO][2015-11-23 11:49:51,599][org.hibernate.Version]HHH000412: Hibernate Core {4.2.5.Final}
+[INFO][2015-11-23 11:49:51,603][org.hibernate.cfg.Environment]HHH000206: hibernate.properties not found
+[INFO][2015-11-23 11:49:51,606][org.hibernate.cfg.Environment]HHH000021: Bytecode provider name : javassist
+[INFO][2015-11-23 11:49:52,237][org.hibernate.dialect.Dialect]HHH000400: Using dialect: org.hibernate.dialect.MySQLDialect
+[INFO][2015-11-23 11:49:52,427][org.hibernate.engine.transaction.internal.TransactionFactoryInitiator]HHH000399: Using default transaction strategy (direct JDBC transactions)
+[INFO][2015-11-23 11:49:52,431][org.hibernate.hql.internal.ast.ASTQueryTranslatorFactory]HHH000397: Using ASTQueryTranslatorFactory
+[INFO][2015-11-23 11:49:52,812][org.hibernate.tool.hbm2ddl.SchemaUpdate]HHH000228: Running hbm2ddl schema update
+[INFO][2015-11-23 11:49:52,812][org.hibernate.tool.hbm2ddl.SchemaUpdate]HHH000102: Fetching database metadata
+[INFO][2015-11-23 11:49:52,819][org.hibernate.tool.hbm2ddl.SchemaUpdate]HHH000396: Updating schema
+[INFO][2015-11-23 11:49:52,858][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000261: Table found: cquacm.acrecord
+[INFO][2015-11-23 11:49:52,859][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000037: Columns: [pid, id, source, username]
+[INFO][2015-11-23 11:49:52,859][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000108: Foreign keys: []
+[INFO][2015-11-23 11:49:52,860][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000126: Indexes: [primary]
+[INFO][2015-11-23 11:49:52,874][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000261: Table found: cquacm.hustaccode
+[INFO][2015-11-23 11:49:52,875][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000037: Columns: [memsize, code, submit, language, pid, id, time, codelength, username]
+[INFO][2015-11-23 11:49:52,875][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000108: Foreign keys: []
+[INFO][2015-11-23 11:49:52,876][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000126: Indexes: [primary]
+[INFO][2015-11-23 11:49:52,889][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000261: Table found: cquacm.notice
+[INFO][2015-11-23 11:49:52,890][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000037: Columns: [id, time, title, content, username]
+[INFO][2015-11-23 11:49:52,890][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000108: Foreign keys: []
+[INFO][2015-11-23 11:49:52,890][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000126: Indexes: [primary]
+[INFO][2015-11-23 11:49:52,906][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000261: Table found: cquacm.problem
+[INFO][2015-11-23 11:49:52,906][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000037: Columns: [ojid, level, ojname, id, tags]
+[INFO][2015-11-23 11:49:52,907][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000108: Foreign keys: []
+[INFO][2015-11-23 11:49:52,907][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000126: Indexes: [primary]
+[INFO][2015-11-23 11:49:52,955][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000261: Table found: cquacm.solution
+[INFO][2015-11-23 11:49:52,955][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000037: Columns: [code, solution, submit, pid, id, username]
+[INFO][2015-11-23 11:49:52,956][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000108: Foreign keys: [fk_8tvulqof7nk1vkm7oenb55130]
+[INFO][2015-11-23 11:49:52,956][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000126: Indexes: [fk_8tvulqof7nk1vkm7oenb55130, primary]
+[INFO][2015-11-23 11:49:52,972][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000261: Table found: cquacm.user
+[INFO][2015-11-23 11:49:52,973][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000037: Columns: [fzu, uva, thirt, campus, codeforces, poj, telephone, blog, password, zoj, major, idcard, schoolid, name, hdu, id, email, hust_name, username]
+[INFO][2015-11-23 11:49:52,974][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000108: Foreign keys: []
+[INFO][2015-11-23 11:49:52,974][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000126: Indexes: [primary]
+[INFO][2015-11-23 11:49:52,976][org.hibernate.tool.hbm2ddl.SchemaUpdate]HHH000232: Schema update complete
+[INFO][2015-11-23 11:49:53,290][org.springframework.orm.hibernate4.HibernateTransactionManager]Using DataSource [{
+	CreateTime:"2015-11-23 11:49:50",
+	ActiveCount:0,
+	PoolingCount:1,
+	CreateCount:1,
+	DestroyCount:0,
+	CloseCount:2,
+	ConnectCount:2,
+	Connections:[
+		{ID:832432849, ConnectTime:"2015-11-23 11:49:52", UseCount:2, LastActiveTime:"2015-11-23 11:49:52"}
+	]
+}] of Hibernate SessionFactory for HibernateTransactionManager
+[INFO][2015-11-23 11:49:53,451][org.springframework.test.context.transaction.TransactionalTestExecutionListener]Began transaction (1): transaction manager [org.springframework.orm.hibernate4.HibernateTransactionManager@7e0aadd0]; rollback [false]
+[WARN][2015-11-23 11:49:53,631][org.hibernate.hql.internal.ast.HqlSqlWalker][DEPRECATION] Encountered positional parameter near line 1, column 42.  Positional parameter are considered deprecated; use named parameters or JPA-style positional parameters instead.
+[WARN][2015-11-23 11:49:53,978][org.hibernate.hql.internal.ast.HqlSqlWalker][DEPRECATION] Encountered positional parameter near line 1, column 44.  Positional parameter are considered deprecated; use named parameters or JPA-style positional parameters instead.
+[INFO][2015-11-23 11:49:54,201][org.springframework.test.context.transaction.TransactionalTestExecutionListener]Committed transaction after test execution for test context [TestContext@33a630fa testClass = SolutionServiceTest, testInstance = com.cquacmer.service.SolutionServiceTest@775594f2, testMethod = query@SolutionServiceTest, testException = [null], mergedContextConfiguration = [MergedContextConfiguration@5767b2af testClass = SolutionServiceTest, locations = '{classpath:spring.xml, classpath:spring-hibernate.xml}', classes = '{}', contextInitializerClasses = '[]', activeProfiles = '{}', contextLoader = 'org.springframework.test.context.support.DelegatingSmartContextLoader', parent = [null]]]
+[INFO][2015-11-23 11:49:54,219][org.springframework.context.support.GenericApplicationContext]Closing org.springframework.context.support.GenericApplicationContext@2ef5e5e3: startup date [Mon Nov 23 11:49:49 CST 2015]; root of context hierarchy
+[INFO][2015-11-23 11:49:54,224][org.springframework.beans.factory.support.DefaultListableBeanFactory]Destroying singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@5906ebcb: defining beans [org.springframework.beans.factory.config.PropertyPlaceholderConfigurer#0,codeController,homeController,loginController,noticeController,problemController,solutionController,summaryController,userController,aCRecordDao,noticeDao,problemDao,solutionDao,userDao,loginService,noticeService,problemService,solutionService,userService,Hust,org.springframework.context.annotation.internalConfigurationAnnotationProcessor,org.springframework.context.annotation.internalAutowiredAnnotationProcessor,org.springframework.context.annotation.internalRequiredAnnotationProcessor,org.springframework.context.annotation.internalCommonAnnotationProcessor,org.springframework.context.annotation.internalPersistenceAnnotationProcessor,dataSource,sessionFactory,transactionManager,transactionAdvice,org.springframework.aop.config.internalAutoProxyCreator,transactionPointcut,org.springframework.aop.support.DefaultBeanFactoryPointcutAdvisor#0,org.springframework.context.annotation.ConfigurationClassPostProcessor.importAwareProcessor]; root of factory hierarchy
+[INFO][2015-11-23 11:49:54,253][com.alibaba.druid.pool.DruidDataSource]{dataSource-1} closed

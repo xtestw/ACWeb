@@ -12,17 +12,18 @@
     <title>题解</title>
 </head>
 <body>
+<div class="text-center"><h1>${problem.ojName} ${problem.ojId}</h1></div>
 <div class="page-header">
-  <h1>Description</h1>
+  <h2>Description</h2>
 </div>
 
 <div class="page-header">
-  <h1>Solutions</h1>
+  <h2>Solutions</h2>
 </div>
 
 <div class="row">
   <div class="col-sm-12">
-    <c:forEach var="item" items="${solutions}">
+    <c:forEach var="item" items="${problem.solutions}">
     <div class="panel panel-default">
       <div class="panel-heading">
         <h3 class="panel-title">${item.username}'s Solution</h3>

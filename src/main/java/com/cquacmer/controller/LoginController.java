@@ -46,7 +46,7 @@ public class LoginController {
             return new ModelAndView("/register","registerError","注册失败");
         }else {
             User user = loginService.register(u);
-
+            if (user!=null) httpSession.setAttribute("user",user);
             return new ModelAndView("/user/profile", "user", loginService.register(u));
         }
     }

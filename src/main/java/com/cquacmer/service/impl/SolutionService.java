@@ -25,6 +25,13 @@ public class SolutionService implements ISolutionService {
     public Problem list(String pid) {
         Problem p=problemDao.get("from Problem where id=?",Integer.parseInt(pid));
         p.getSolutions();
+       // List<Solution> ret=solutionDao.findList("from ")
         return p;
+    }
+
+    @Override
+    public Solution add(Solution solution) {
+        solutionDao.save(solution);
+        return solution;
     }
 }

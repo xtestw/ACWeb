@@ -12,4 +12,5 @@ import java.util.List;
 public interface ISolutionService {
 
     public Problem list(String pid);
+    public Solution add(Solution solution);
 }

@@ -13,4 +13,5 @@ public interface IProblemService {
     public List<Problem> search(String ojName,String ojId,String tags);
     public Pagination<Problem> list(int index,int pageSize);
     public Pagination<Problem> search(String ojName,String ojId,String tags,int index,int PageSize);
+    public void update(Problem p);
 }

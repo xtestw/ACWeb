@@ -81,4 +81,9 @@ public class ProblemService implements IProblemService {
         Pagination<Problem> ret=problemDao.findPagination(hql,index,pageSize, params.toArray());
         return ret;
     }
+
+    @Override
+    public void update(Problem p) {
+        problemDao.update(p);
+    }
 }

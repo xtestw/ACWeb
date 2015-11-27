@@ -19,6 +19,7 @@
 
   <script src="/js/pointRun.js"></script>
   <link rel="stylesheet" href="/css/login.css" />
+  <script type="text/javascript" src="/js/md5.js"></script>
   <script type="text/javascript">
     function changeImg() {
       var imgSrc = $("#imgObj");
@@ -37,7 +38,7 @@
     }
 
     function login(){
-      $("#inputPassword").val($("#inputPassword").val());
+      $("#inputPassword").val($.md5($("#inputPassword").val()));
       return true;
     }
   </script>

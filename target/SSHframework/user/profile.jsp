@@ -14,7 +14,7 @@
   <div class="row">
     <div class="col-sm-3 sidebar">
       <ul class="nav nav-sidebar">
-        <li class="active"><a href="#">总览</a></li>
+        <li class="active"><a href="#">DashBoard</a></li>
         <li><a href="#">我的任务</a></li>
         <li><a href="#">我的题解</a></li>
         <li><a href="#">我的总结</a></li>

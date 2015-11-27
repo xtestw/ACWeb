@@ -41,7 +41,7 @@ public class LoginController {
 
     @RequestMapping(value="/register", method = RequestMethod.POST)
     public ModelAndView register(User u,String code,HttpSession httpSession){
-        if(code.isEmpty() || code.toLowerCase().equals(httpSession.getAttribute("code").toString().toLowerCase()) )
+        if(code.isEmpty() || !code.toLowerCase().equals(httpSession.getAttribute("code").toString().toLowerCase()) )
         {
             return new ModelAndView("/register","registerError","注册失败");
         }else {

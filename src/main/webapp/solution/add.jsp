@@ -9,25 +9,41 @@
 <html>
 <head>
     <title>添加题解</title>
-  <script type="text/javascript" src="/js/tinymce/tinymce.min.js"></script>
+  <script type="text/javascript" src="/js/tiny_mce/tiny_mce.js"></script>
   <script type="text/javascript">
     $(function(){
-      alert("start");
-      tinymce.init({
-        selector: "#solution",
-        theme: "modern",
-        width: 600,
-        height: 300,
-        plugins: [
-          "advlist autolink link image lists charmap print preview hr anchor pagebreak spellchecker",
-          "searchreplace wordcount visualblocks visualchars code fullscreen insertdatetime media nonbreaking",
-          "save table contextmenu directionality emoticons template paste textcolor"
-        ],
-        content_css: "css/content.css",
-        toolbar: "insertfile undo redo | styleselect | bold italic | alignleft aligncenter alignright alignjustify | bullist numlist outdent indent | link image | print preview media fullpage | forecolor backcolor emoticons"
+      tinyMCE.init({
+        // General options
+        language: "zh-cn",
+        mode: "exact",
+        elements: "solution",
+        theme: "advanced",
+        plugins: "autosave,style,advhr,advimage,advlink,preview,inlinepopups,media,paste,syntaxhl,wordcount",
+        // Theme options
+        theme_advanced_buttons1: "formatselect,fontselect,fontsizeselect,|,bold,italic,underline,strikethrough,forecolor,|,advhr,blockquote,syntaxhl,",
+        theme_advanced_buttons2: "undo,redo,|,bullist,numlist,outdent,indent,|,justifyleft,justifycenter,justifyright,justifyfull,|,pastetext,pasteword,|,link,unlink,image,iespell,|,cleanup,preview,",
+        theme_advanced_buttons3: "",
+        theme_advanced_toolbar_location: "top",
+        theme_advanced_toolbar_align: "left",
+        theme_advanced_resizing: true,
+        theme_advanced_statusbar_location: "bottom",
+        extended_valid_elements: "link[type|rel|href|charset],pre[name|class],iframe[src|width|height|name|align],+a[*]",
+        valid_children: "+body[style]",
+        relative_urls: false,
+        remove_script_host: false,
+        height:500,
+        width:"100%",
+        oninit: function () {
+          if (typeof (conf.fun) === "function") {
+            conf.fun();
+          }
+        }
       });
     });
   </script>
+  <style >
+
+  </style>
 </head>
 <body>
 <form class="form-horizontal" method="post" action="/solution/add">
@@ -59,7 +75,7 @@
       <!-- Text input-->
       <label class="control-label" for="ojId">题号:</label>
       <div class="controls">
-        <input type="text" id="ojId" name="ojId" placeholder="Problem ID" class="input-xlarge">
+        <input type="text" id="ojId" name="ojId" placeholder="Problem ID" class="form-control input-xlarge">
       </div>
     </div>
 
@@ -68,7 +84,7 @@
       <!-- Textarea -->
       <label class="control-label">题解</label>
       <div class="controls">
-        <div class="textarea">
+        <div class="textarea" id="mceEditor" style="width:100%;">
           <textarea id="solution" name="solution" type="" class=""> </textarea>
         </div>
       </div>
@@ -76,6 +92,5 @@
   <input type="submit" value="提交"/>
   </fieldset>
 </form>
-
 </body>
 </html>

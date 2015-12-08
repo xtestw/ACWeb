@@ -10,7 +10,8 @@ import java.util.List;
  * Created by admin on 2015/11/22.
  */
 public interface ISolutionService {
-
-    public Problem list(String pid);
+    public List<Solution> list(String pid);
     public Solution add(Solution solution);
+    public Solution Update(Solution solution);
+    public Solution getById(int id);
 }

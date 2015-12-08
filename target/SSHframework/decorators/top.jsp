@@ -18,7 +18,11 @@
         <span id="main-nav-menu" data-turbolinks-temporary>
           <ul class="nav navbar-nav">
             <li><a href="/">首页</a></li>
-            <li><a href="/problem/list">题解</a></li>
+              <li><a href="/problem/list">题解</a></li>
+              <li><a href="/problem/list">AC代码</a></li>
+              <li><a href="/problem/list">资料下载</a></li>
+              <li><a href="/problem/list">集训队简介</a></li>
+              <li><a href="/problem/list">联系我们</a></li>
           </ul>
         </span>
       <c:choose>

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sitemesh>
+
+    <!-- 指明满足“/*”的页面，将被“/WEB-INF/views/decorators/decorator.html”所装饰 -->
+    <mapping path="/*" decorator="/decorators/basic.jsp" />
+    <mapping path="/solution/add.jsp">
+        <decorator>/decorators/console.jsp</decorator>
+        <decorator>/decorators/basic.jsp</decorator>
+    </mapping>
+
+
+    <!-- 指明满足“/exclude.jsp*”的页面，将被排除，不被装饰 -->
+    <mapping path="/js/tiny_mce/plugins/media/media.htm" exclue="true"/>
+    <mapping path="/js/tiny_mce/plugins/syntaxhl/syntaxhl.htm" exclue="true"/>
+    <mapping path="/js/tiny_mce/plugins/*/*" exclue="true"/>
+    <mapping path="/js/tiny_mce/themes/advanced/source_editor.htm" exclue="true"/>
+    <mapping path="/js/tiny_mce/utils/*/*" exclue="true"/>
+
+</sitemesh>

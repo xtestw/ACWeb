@@ -46,6 +46,11 @@
   </style>
 </head>
 <body>
+<c:if test="${addInfo!=null}">
+  <div class="alert">
+    <a class="close" data-dismiss="alert">×</a>
+    <strong>${addInfo}</strong></div>
+</c:if>
 <form class="form-horizontal" method="post" action="/solution/add">
   <fieldset>
     <div id="legend" class="">
@@ -56,7 +61,7 @@
       <!-- Select Basic -->
       <label class="control-label">OJ:</label>
       <div class="controls">
-        <select class="form-control" name="ojName">
+        <select class="form-control" name="problem.ojName">
           <option value="CodeForces">CodeForces</option>
           <option value="POJ">POJ</option>
           <option value="HDU">HDU</option>
@@ -71,16 +76,41 @@
 
 
     <div class="control-group">
-
       <!-- Text input-->
-      <label class="control-label" for="ojId">题号:</label>
+      <label class="control-label" for="problem.ojId">题号:</label>
       <div class="controls">
-        <input type="text" id="ojId" name="ojId" placeholder="Problem ID" class="form-control input-xlarge">
+        <input type="text" id="problem.ojId" name="problem.ojId" placeholder="Problem ID" class="form-control input-xlarge">
       </div>
     </div>
 
     <div class="control-group">
 
+      <!-- Text input-->
+      <label class="control-label" for="problem.tags">类型(分号隔开):</label>
+      <div class="controls">
+        <input type="text" id="problem.tags" name="problem.tags" placeholder="Problem Type" class="form-control input-xlarge">
+      </div>
+    </div>
+
+
+    <div class="control-group">
+    <!-- Select Basic -->
+    <label class="control-label">难度:</label>
+    <div class="controls">
+      <select class="form-control" name="problem.level">
+        <option value="水题">水题</option>
+        <option value="简单">简单</option>
+        <option value="中档">中档</option>
+        <option value="中档偏难">中档偏难</option>
+        <option value="难题">难题</option>
+        <option value="非常难">非常难</option>
+        <option value="final">final</option>
+      </select>
+    </div>
+
+    </div>
+
+    <div class="control-group">
       <!-- Textarea -->
       <label class="control-label">题解</label>
       <div class="controls">
@@ -89,7 +119,9 @@
         </div>
       </div>
     </div>
-  <input type="submit" value="提交"/>
+    <div class="control-group text-right" style="margin-top:5px">
+        <input type="submit" value="提交" class="btn btn-default"/>
+    </div>
   </fieldset>
 </form>
 </body>

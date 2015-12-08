@@ -24,6 +24,11 @@ public class ProblemService implements IProblemService {
     private IProblemDao problemDao;
 
     @Override
+    public void add(Problem problem) {
+        problemDao.save(problem);
+    }
+
+    @Override
     public List<Problem> list() {
         return problemDao.findList("from Problem");
     }
@@ -49,6 +54,14 @@ public class ProblemService implements IProblemService {
             f=true;
         }
         List<Problem> ret=problemDao.findList(hql,params.toArray());
+        if((ret==null || ret.size()==0) && ojName!=null && ojId!=null) {
+            Problem p = new Problem();
+            p.setOjName(ojName);
+            p.setOjId(ojId);
+            if(tags!=null) p.setTags(tags);
+            problemDao.save(p);
+            ret=problemDao.findList(hql,params.toArray());
+        }
         return ret==null?(new ArrayList<Problem>()):ret;
     }
 
@@ -85,5 +98,30 @@ public class ProblemService implements IProblemService {
     @Override
     public void update(Problem p) {
         problemDao.update(p);
+    }
+
+    @Override
+    public Problem getById(String Pid) {
+       return problemDao.getById(Integer.parseInt(Pid));
+    }
+
+    @Override
+    public Problem getBySourceAndPid(String ojName, String ojId) {
+        String hql="from Problem where ";
+        List<Object> params=new ArrayList<Object>();
+        boolean f=false;
+        if(ojName!=null) {
+            params.add(ojName);
+            if(f) hql=hql+"and ";hql=hql+"ojName =?";
+            f=true;
+        }
+        if(ojId!=null) {
+            params.add(ojId);
+            if(f) hql=hql+" and ";hql=hql+"ojId =?";
+            f=true;
+        }
+        List<Problem> ret=problemDao.findList(hql,params.toArray());
+        if(ret==null || ret.size()==0) return null;
+        return ret.get(0);
     }
 }

@@ -11,6 +11,7 @@ import org.springframework.test.context.transaction.TransactionConfiguration;
 import org.springframework.transaction.annotation.Transactional;
 
 import javax.annotation.Resource;
+import java.util.Date;
 import java.util.List;
 
 /**
@@ -29,7 +30,7 @@ public class SolutionServiceTest {
 
     @Test
     public void query(){
-        Problem p= solutionService.list("1");
+      /*  Problem p= solutionService.list("1");
         System.out.println(p.getSolutions().size());
         List<Solution> solutionList= solutionDao.findList("from Solution where pid=?",1);
         System.out.println(solutionList.size());
@@ -37,6 +38,17 @@ public class SolutionServiceTest {
         s.setUsername("@2");
         s.setSolution("33333");
         s.setProblem(p);
-        p.getSolutions().add(s);
+        p.getSolutions().add(s);*/
+    }
+    @Test
+    public void add(){
+        Solution s=new Solution();
+        s.setUsername("@2");
+        s.setSolution("33333");
+        Problem p=new Problem();
+        p.setId(1);
+        s.setSubmit(new Date());
+        s.setProblem(p);
+        solutionService.add(s);
     }
 }

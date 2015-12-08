@@ -10,8 +10,8 @@ import java.util.Date;
 @Entity
 public class HustACCode {
     private int id;
-    private int pid;
-
+    private String source;
+    private String pid;
     private String username;
     private String language;
     private String code;
@@ -30,15 +30,21 @@ public class HustACCode {
         this.id = id;
     }
 
-    public int getPid() {
+    public String getPid() {
         return pid;
     }
 
-    public void setPid(int pid) {
+    public void setPid(String pid) {
         this.pid = pid;
     }
 
+    public String getSource() {
+        return source;
+    }
 
+    public void setSource(String source) {
+        this.source = source;
+    }
 
     public String getUsername() {
         return username;

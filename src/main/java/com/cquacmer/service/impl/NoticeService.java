@@ -26,4 +26,31 @@ public class NoticeService implements INoticeService {
     public List<Notice> listNotices() {
         return noticeDao.findList("from Notice");
     }
+
+    @Override
+    public void Add(Notice notice) {
+        noticeDao.save(notice);
+    }
+
+    @Override
+    public void Delete(Notice notice) {
+        noticeDao.delete(notice);
+    }
+
+    @Override
+    public void DeleteById(int id) {
+        Notice notice = noticeDao.getById(id);
+        if(notice!=null)
+            noticeDao.delete(notice);
+    }
+
+    @Override
+    public Notice QueryById(int id) {
+        return noticeDao.getById(id);
+    }
+
+    @Override
+    public void Update(Notice notice) {
+        noticeDao.update(notice);
+    }
 }

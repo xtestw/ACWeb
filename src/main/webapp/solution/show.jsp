@@ -23,7 +23,7 @@
 
 <div class="row">
   <div class="col-sm-12">
-    <c:forEach var="item" items="${problem.solutions}">
+    <c:forEach var="item" items="${list}">
     <div class="panel panel-default">
       <div class="panel-heading">
         <h3 class="panel-title">${item.username}'s Solution</h3>

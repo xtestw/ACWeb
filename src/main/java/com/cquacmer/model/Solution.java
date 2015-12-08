@@ -28,7 +28,7 @@ public class Solution {
         this.id = id;
     }
 
-    @ManyToOne(cascade=CascadeType.ALL)
+    @OneToOne(cascade=CascadeType.ALL)
     @JoinColumn(name = "pid")
     public Problem getProblem() {
         return problem;
@@ -71,4 +71,5 @@ public class Solution {
     public void setSubmit(Date submit) {
         this.submit = submit;
     }
+
 }

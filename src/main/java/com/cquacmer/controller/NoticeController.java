@@ -14,6 +14,7 @@ import javax.annotation.Resource;
 @Controller
 @RequestMapping("/notice")
 public class NoticeController {
+
     @Resource
     private INoticeService noticeService;
 

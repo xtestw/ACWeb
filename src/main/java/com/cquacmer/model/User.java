@@ -1,6 +1,8 @@
 package com.cquacmer.model;
 
 import javax.persistence.*;
+import java.util.List;
+import java.util.Set;
 
 /**
  * Created by xuwei on 15/11/1.
@@ -27,6 +29,9 @@ public class User {
     private String major;
     private String telephone;
     private String blog;
+    private List<Role> role;
+    private boolean locked;
+    private String salt;
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Column(name = "ID", nullable = false, length = 9)
@@ -182,6 +187,35 @@ public class User {
         this.blog = blog;
     }
 
+    @OneToMany(cascade = CascadeType.ALL)
+    public List<Role> getRole() {
+        return role;
+    }
+
+    public void setRole(List<Role> role) {
+        this.role = role;
+    }
+
+    public boolean getLocked() {
+        return locked;
+    }
+
+    public void setLocked(boolean locked) {
+        this.locked = locked;
+    }
+
+    public boolean isLocked() {
+        return locked;
+    }
+
+    public String getSalt() {
+        return salt;
+    }
+
+    public void setSalt(String salt) {
+        this.salt = salt;
+    }
+
     @Override
     public String toString() {
         return "User{" +
@@ -206,4 +240,5 @@ public class User {
                 ", blog='" + blog + '\'' +
                 '}';
     }
+
 }

@@ -21,17 +21,52 @@ public class SolutionService implements ISolutionService {
     private ISolutionDao solutionDao;
     @Resource
     private IProblemDao problemDao;
+
+    /***
+     * 根据Problem的Id获取其对应的所有的题解
+     * @param pid
+     *          Problem的Id
+     * @return
+     *          对应的所有的题解
+     */
     @Override
-    public Problem list(String pid) {
-        Problem p=problemDao.get("from Problem where id=?",Integer.parseInt(pid));
-        p.getSolutions();
-       // List<Solution> ret=solutionDao.findList("from ")
-        return p;
+    public List<Solution> list(String pid) {
+        int id=Integer.parseInt(pid);
+        List<Solution> ret=solutionDao.findList("from Solution where pid= ?",id);
+        return ret;
     }
 
+    /***
+     * 增加新的题解
+     * @param solution
+     * @return
+     */
     @Override
     public Solution add(Solution solution) {
         solutionDao.save(solution);
         return solution;
     }
+
+    /**
+     * 更新题解
+     * @param solution
+     * @return
+     */
+    @Override
+    public Solution Update(Solution solution) {
+        solutionDao.update(solution);
+        return solution;
+    }
+
+    /**
+     * 根据ID查询ID
+     * @param id
+     * @return
+     */
+    @Override
+    public Solution getById(int id) {
+        return solutionDao.getById(id);
+    }
+
+
 }

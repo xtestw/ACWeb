@@ -3,6 +3,7 @@ package com.cquacmer.model;
 import org.hibernate.annotations.Type;
 
 import javax.persistence.*;
+import java.io.Serializable;
 import java.util.Date;
 
 /**
@@ -10,7 +11,7 @@ import java.util.Date;
  */
 @Table(name="summary")
 @Entity
-public class Summary {
+public class Summary implements Serializable {
     private int id;
     private String title;
     private User author;

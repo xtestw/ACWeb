@@ -72,6 +72,6 @@ public class UserService implements IUserService {
 
     @Override
     public User findByEmail(String email) {
-        return null;
+        return userDao.get("from User u where u.email = ?",email);
     }
 }

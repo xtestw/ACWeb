@@ -8,6 +8,7 @@
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <%@taglib prefix="decorator" uri="http://www.opensymphony.com/sitemesh/decorator" %>
 <%@taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
+<%@taglib prefix="shiro" uri="http://shiro.apache.org/tags" %>
 <div class="header">
   <nav class="navbar navbar-static-top navbar-default">
     <div class="container">
@@ -25,8 +26,9 @@
               <li><a href="/problem/list">联系我们</a></li>
           </ul>
         </span>
-      <c:choose>
-     <c:when test="${sessionScope.user==null}">
+
+        <c:choose>
+          <c:when test="${sessionScope.user==null}">
       <ul class="nav user-bar navbar-nav navbar-right">
         <li><a href="/register.jsp">注册</a></li>
         <li><a href="/login.jsp">登录</a></li>
@@ -35,12 +37,19 @@
         <c:otherwise>
       <ul class="nav user-bar navbar-nav navbar-right">
         <li class="dropdown">
-          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">xtestw <span class="caret"></span></a>
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">${sessionScope.user.name} <span class="caret"></span></a>
           <button class="navbar-toggle" type="button" data-toggle="dropdown" role="button" aria-expanded="false">
             <span class="sr-only">Toggle</span>
             <i class="fa fa-reorder"></i>
           </button>
-          <ul class="dropdown-menu" role="menu"><li class=""><a href="/xtestw">我的主页</a></li><li class=""><div class='divider'></div></li><li class=""><a href="/account/edit">个人资料设置</a></li><li class=""><a href="/notes">记事本</a></li><li class=""><a href="/xtestw/favorites">我的收藏</a></li><li class=""><div class='divider'></div></li><li class=""><a rel="nofollow" data-method="delete" href="/account/sign_out">退出</a></li></ul>
+          <ul class="dropdown-menu" role="menu">
+              <li class=""><a href="/user/profile">我的主页</a></li>
+              <li class=""><div class='divider'></div></li>
+              <li class=""><a href="/account/edit">个人资料设置</a></li>
+              <li class=""><a href="/notes">记事本</a></li>
+              <li class=""><a href="/xtestw/favorites">我的收藏</a></li>
+              <li class=""><div class='divider'></div></li>
+              <li class=""><a rel="nofollow" data-method="delete" href="/logout">退出</a></li></ul>
         </li>
       </ul></c:otherwise>
       </c:choose>

@@ -1,6 +1,7 @@
 package com.cquacmer.model;
 
 import javax.persistence.*;
+import java.io.Serializable;
 import java.util.Date;
 
 /**
@@ -8,7 +9,7 @@ import java.util.Date;
  */
 @Table(name="hustACCode")
 @Entity
-public class HustACCode {
+public class HustACCode implements Serializable {
     private int id;
     private String source;
     private String pid;

@@ -8,9 +8,10 @@
   <%@ page contentType="text/html;charset=UTF-8" language="java" %>
   <html>
   <head>
-      <title></title>
+      <title>${user.email}的个人信息</title>
   </head>
   <body>
+
   <div class="row">
     <div class="col-sm-3 sidebar">
       <ul class="nav nav-sidebar">

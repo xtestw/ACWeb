@@ -1,13 +1,14 @@
 package com.cquacmer.model;
 
 import javax.persistence.*;
+import java.io.Serializable;
 
 /**
  * Created by admin on 2015/11/18.
  */
 @Table(name="acrecord")
 @Entity
-public class ACRecord {
+public class ACRecord implements Serializable {
     private int id;
     private String source;
     private String pid;

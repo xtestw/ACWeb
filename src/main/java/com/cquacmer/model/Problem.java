@@ -1,12 +1,13 @@
 package com.cquacmer.model;
 
 import javax.persistence.*;
+import java.io.Serializable;
 import java.util.ArrayList;
 import java.util.List;
 
 @Table(name="problem")
 @Entity
-public class Problem {
+public class Problem implements Serializable {
 
     public Problem(){
         ojName="";

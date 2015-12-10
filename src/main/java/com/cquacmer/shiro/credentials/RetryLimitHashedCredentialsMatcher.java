@@ -32,7 +32,8 @@ public class RetryLimitHashedCredentialsMatcher extends HashedCredentialsMatcher
             //if retry count > 5 throw
             throw new ExcessiveAttemptsException();
         }
-
+        System.out.println("1"+token.getPrincipal()+token.getCredentials());
+        System.out.println("2"+info.getPrincipals()+info.getCredentials());
         boolean matches = super.doCredentialsMatch(token, info);
         if(matches) {
             //clear retry count

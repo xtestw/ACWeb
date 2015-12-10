@@ -37,9 +37,7 @@ public class UserRealm extends AuthorizingRealm {
     protected AuthenticationInfo doGetAuthenticationInfo(AuthenticationToken token) throws AuthenticationException {
 
         String email = (String)token.getPrincipal();
-
         User user = userService.findByEmail(email);
-
         if(user == null) {
             throw new UnknownAccountException();//没找到帐号
         }
@@ -48,11 +46,10 @@ public class UserRealm extends AuthorizingRealm {
             throw new LockedAccountException(); //帐号锁定
         }
 
-        //交给AuthenticatingRealm使用CredentialsMatcher进行密码匹配，如果觉得人家的不好可以自定义实现
         SimpleAuthenticationInfo authenticationInfo = new SimpleAuthenticationInfo(
                 user.getEmail(), //用户名
                 user.getPassword(), //密码
-                ByteSource.Util.bytes(user.getSalt()+user.getEmail()),//salt=email+salt
+                ByteSource.Util.bytes(user.getSalt()),
                 getName()  //realm name
         );
         return authenticationInfo;

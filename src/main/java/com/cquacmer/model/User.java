@@ -1,6 +1,7 @@
 package com.cquacmer.model;
 
 import javax.persistence.*;
+import java.io.Serializable;
 import java.util.List;
 import java.util.Set;
 
@@ -9,7 +10,7 @@ import java.util.Set;
  */
 @Table(name="user")
 @Entity
-public class User {
+public class User implements Serializable {
     private int id;
     private String name;
     private String hust_name;
